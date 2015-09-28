@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}	%Package para figuras
+\usepackage{enumerate}
+\usepackage{tabularx}
+%\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+
+\title{Proposta de Pesquisa: \\
+Ferramentas para Business Report com Suporte à XBRL
+}
+\author{Vagner Clementino \\ 
+       vagnercs@dcc.ufmg.br}
+\date{Setembro de  2015}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+\label{sec:intro}
+
+To do.
+
+\section{Justificativa}
+\label{sec:contexto}
+
+Tendo em vista a determinação da Secretaria do Tesouro Nacional, órgão vinculado ao  Ministério da Fazenda do Brasil, que definiu o XBRL como padrão para o envio de relatórios de prestação de contas pelos entes federativos (estados e municípios), surgiu a necessidade do desenvolvimento ou aquisição de sistemas de informação capazes de criar, processar e enviar informações naquele formato. Como o objetivo de deixar mais claro o contexto no qual esta necessidade se apresenta analisemos o cenário a seguir descrito como \textit{storytelling}:
+\\
+\\
+\begin{center}
+\fbox{
+\begin{minipage}{28em}
+%\textit{
+Arnaldo é gerente de projeto em em uma empresa responsável pelo desenvolvimento de sistemas para uma prefeitura de médio porte no estado de Minas Gerais. Ele foi informado pela diretoria de sua empresa que devido à mudanças legais, definidas Secretaria do Tesouro Nacional, as prestações de contas da prefeitura para o governo federal deverá ser realizada em um novo formato denominado XBRL, acrônimo de eXtensible Business Reporting Language. Arnaldo sabe que os sistemas de informações à serviço da prefeitura realizam o processo de envio de relatório aos órgãos fiscalizadores nos formatos CSV (Comma-separated values) e xls (Microsoft Excel Binary File Format). Neste sentido, ele entende que há dois caminhos possíveis para atender a demanda da prefeitura:
+
+\begin{enumerate}[(i)]
+\item Adquirir uma ferramenta de terceiros que suporte à prestação de contas no formato XBRL
+\item Desenvolver na própria empresa um  sistema de informação de informação que possibilite a prestação de conta no formato requirido mas que também possibilite a geração nos formatos já utilizados;
+\end{enumerate}
+
+Naturalmente ambas as soluções possuem os seus prós e contras. Caso a organização opte por adquirir (caminho (i)) ela não correrá o risco do baixo conhecimento que existe atualmente na equipe com relação ao assunto XBRL, todavia, o sistema comprado por terceiros poderá não atender todos aos requisitos necessários sendo necessário uma customização posterior. De outra forma, a criação de um projeto (solução ii) possui o inverso das qualidades e defeito da solução (i). 
+
+A fim de subsidiar a decisão de qual caminho seguir, Arnaldo realiza uma busca na Internet de comparativo entre ferramentas para Business Report com suporte à XBRL, contudo, os resultados se mostram incipientes. Ele novamente utiliza uma ferramenta de busca com objetivo de pesquisar sobre boas práticas e lições apreendidas na construção de ferramentas para Business Report e novamente fica decepcionado com os dados retornado. Arnaldo sente-se frustrado por não conseguir referências que o ajude em definir entre a solução (i) e (ii).
+%}
+\end{minipage}
+}
+\end{center}
+
+Ao analisarmos o problema descrito no estudo de caso do gerente Arnaldo verifica-se que há a necessidade por parte das organizações, especialmente naquele caso das entidades públicas, de referências de qualidade sobre o assunto de XBRL. Um possível trabalho que poderia subsidiar a tomada de decisão pela \textit{solução (i)} poderia ser uma \textit{Revisão Sistemática da Literatura} - SLR (do inglês Systematic Literature Review) que avaliasse as ferramentas para Business Report que dão suporte ao XBRL. No caso da \textit{solução (ii)} a estratégia empírica que melhor lhe daria suporte seria um Survey que poderia coletar com os mais diferentes partes interessadas (stakeholders) no processo de prestação de contas das diversas prefeituras do país afim de avaliar as melhores práticas e lições aprendidas no desenvolvimento e utilização de sistema de informação para prestação de contas. 
+
+
+Cabe ressaltar neste ponto que existe na literatura, especialmente da Engenharia de Software, a utilização de Revisão Sistemática da Literatura (SLR) e Suvey como sinônimos. Na realidade a SLR pode se considerado um subtipo de Survey. Todavia, com o objetivo de eviar qualquer tipo de mal entendido consideramos SLR e Survey como duas estratégias empíricas \cite{wohlin2012experimentation} distintas definidas conforme a seguir.
+
+Um \textbf{Survey} é um sistema para coletar informações de ou sobre \textit{pessoas} para descrever, comparar ou explicar seus conhecimentos, atitudes e comportamento \cite{fink2003survey}. Um Survey geralmente é conduzido em retropectiva, ou seja, avalia a utilização por um determinado período de uma ferramenta ou técnica \cite{kitchenham2009systematic}. Outra característica marcante dos Survey é que estes são aplicados em uma amostra de uma população visando derivar conclusões sobre esta última \cite{robson2002real}.
+
+\section{Objetivos do Trabalho}
+\label{sec:objetivos}
+
+
+\section{Revisão Sistemática da Literatura}
+\label{sec:rsl}
+
+Uma Revisão Sistemática da literatura (SLR), por se tratar de método científico, deve seguir uma sequência rigorosa de passos a fim de alcançar os seus objetivos. Alguns guidelines orientam como sequências fundamentais no processo de desenvolvimento de uma SLR\cite{keele2007guidelines}, dentre outras: especificar uma ou mais sentenças de buscas que serão inseridas nas ferramentas de busca com o objetivo de recuperar os estudo preliminares que serão utilizados na revisão; definir um conjunto de \textit{questões de pesquisa} que servirão de norte na condução do trabalho; desenvolver um protocolo que definirá os procedimentos a serem adotados durante a revisão, ele servirá como um guia para a condução da revisão. 
+
+\subsection{Setenças de Busca}
+\label{subsec:setences}
+
+Como a revisão proposta tem como principal objetivo ser uma referência para aqueles interessados em avaliar ferramentas de Business Report com suporte à XBRL, naturalmente sentenças como ``XBRL", ``tools", ``Business Report"\footnote{Inicialmente será utilizado apenas as sentenças na língua inglesa} se mostram como boas candidatas. 
+
+A fim de avaliar qual sentença de busca possibilitaria um conjunto de estudos preliminares com maior relevância para o trabalho, foi realizada um estudo prévio utilizando a ferramenta de pesquisa Google Schoolar\footnote{\url{https://scholar.google.com.br/}}. O estudo realizado é bastante simples consistindo apenas em recuperar o total de artigos recuperados quando realizado uma pesquisa com uma sentença $S_n$ qualquer. Não foi utilizado qualquer tipo de filtro na busca (como por exemplo "por data") e os resultados foram classificados por relevância. Apesar do simplicidade deste estudo ele se mostra como um bom ponto de parte para a condução da revisão. A tabela \ref{tab:sentencas} exibe as sentenças utilizadas bem como o total de artigos recuperados pela consulta. 
+
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{clc}
+\rowcolor[HTML]{EFEFEF} 
+{\bf Código da Sentença} & \multicolumn{1}{c}{\cellcolor[HTML]{EFEFEF}{\bf Sentença}} & {\bf Total de Artigos}     \\ \hline
+\multicolumn{1}{|c|}{$S_1$} & \multicolumn{1}{l|}{“XBRL”}                                & \multicolumn{1}{c|}{15000} \\ \hline
+\multicolumn{1}{|c|}{$S_2$} & \multicolumn{1}{l|}{“XBRL tools”}                          & \multicolumn{1}{c|}{3710}  \\ \hline
+\multicolumn{1}{|c|}{$S_3$} & \multicolumn{1}{l|}{“XBRL business report tools”}          & \multicolumn{1}{c|}{4110}  \\ \hline
+\multicolumn{1}{|c|}{$S_4$} & \multicolumn{1}{l|}{“XBRL tools marketing”}                & \multicolumn{1}{c|}{1290}  \\ \hline
+\multicolumn{1}{|c|}{$S_5$} & \multicolumn{1}{l|}{“XBRL business report software tools”} & \multicolumn{1}{c|}{2970}  \\ \hline
+\end{tabular}
+}
+\caption{Total de artigos por sentença}
+\label{tab:sentencas}
+\end{table}
+
+Como pode ser observado a sentença $S_1$ é a consulta mais genérica que poderia ser feita sobre no contexto da XBRL, contudo, é retornado um total de 15000 um valor muito pequeno comparado ao total de artigos retornados ao realizar consultas com o termo ``XML' por exemplo\footnote{A consulta por XML retorna aproximadamente $3 \times 10^{6}$ artigos}.
+
+Não obstante a sentença $S_6$ se mostrou satisfatória também pelo total de artigos recuperados bem como pela relevância dos mesmo, auferida pela inspeção manual de alguns resultados. Visando avaliar o impacto de restringir o ano de publicação na setença $S_6$ foi realizada um novo conjunto de buscas solicitado apenas a recuperação de artigos a partir de determinado ano. 
+
+\begin{figure}[h] 
+\label{fig:graph_artigos_ano}
+\caption{Total de artigo a partir de determinado ano para a sentença $S_6$}
+
+\includegraphics[width=8cm]{../img/graph_01.eps}
+\centering
+\end{figure}
+
+A Figura \ref{fig:graph_artigos_ano} mostra a redução do número de artigos quanto se redur o perído de pesquisa. Em uma análise preliminar pode-se afirmar que a utilização de artigos publicados a partir de 2012 consegue englobar uma massa de artigos suficiente para um estudo preliminar. Case ressaltar que outros critérios serão definidos para aceitação de um determinado trabalho. Essas diretrizes serão definidas em um protocolo, conforme especificado na Subseção \ref{subsec:protocol}.
+
+\subsection{Questões de Pesquisa}
+\label{subsec:research_question}
+
+\subsection{Protocolo de Desenvolvimento da Revisão}
+\label{subsec:protocol}
+
+
+
+\section{Survey com Stackholders}
+\label{sec:survey}
+
+
+\section{Cronograma}
+\label{sec:cronograma}
+
+
+\section{Próximas Etapas}
+\label{sec:proximas_etapas}
+
+\medskip
+
+\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\bibliography{../bib/propostaref}
+
+\end{document}
