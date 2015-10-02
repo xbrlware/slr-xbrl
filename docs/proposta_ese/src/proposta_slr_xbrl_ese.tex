@@ -9,7 +9,7 @@
 \usepackage[table,xcdraw]{xcolor}
 
 \title{Proposta do Projeto Final \\
-       da disciplina Engenharia de Softwa Experimental: \\
+       da disciplina Engenharia de Software Experimental: \\
 Ferramentas para Business Report com Suporte à Linguagem XBRL - Revisão
 Sistemática da Literatura
 }
@@ -87,34 +87,62 @@ necessidade das organizações de serem cada vez mais transparentes.
 \section{Objetivos do Trabalho}
 \label{sec:objetivos}
 
-O trabalho ora proposto tem como objetivo desenvolver dois trabalhos
-empíricos sobre o assunto \textit{XBRL}. A primeira parte consiste no
-desenvolvimento de uma \textit{Revisão Sistemática da Literatura -
-  SLR} sobre ferramentas de \textit{Business Report} com suporte ao
-padrão XBRL. O público alvo do referido trabalho serão pesquisadores,
-programadores, gestores que precisam de uma fonte de informação
-independente que avaliasse as soluções existentes no mercado. A partir
+O trabalho ora proposto tem como objetivo desenvolver  uma \textit{Revisão Sistemática da Literatura -
+  SLR} sobre ferramentas de \textit{Business Report} com suporte ao padrão XBRL. O público alvo do referido trabalho serão pesquisadores,
+programadores, gestores que precisam de uma fonte de informação independente que avaliasse as soluções existentes no mercado. A partir
 dos dados obtidos da \textit{SLR} seria possível, por exemplo, propor
-novas Ferramentas ou mesmo melhorias nas existentes.
+novas ferramentas ou mesmo melhorias nas existentes. A SLR será
+conduzida seguindo as diretrizes proposta por \cite{keele2007guidelines,wohlin2012experimentation}.
 
 \section{Estudo Preliminar}
 \label{sec:rsl}
 
 Uma Revisão Sistemática da literatura (SLR), por se tratar de método
 científico, deve seguir uma sequência rigorosa de passos a fim de
-alcançar os seus objetivos. Alguns diretrizes orientam como sequências
-fundamentais no processo de desenvolvimento de uma
-SLR\cite{keele2007guidelines}, dentre outras: 
+alcançar os seus objetivos. Todavia, com o objetivo de verificar a
+viabilidade da revisão, bem como validar alguma definições realizadas
+na fase de projeto de revisão, foi realizada um estudo preliminar da
+SLR. Neste estudo foi realizada uma sequência de passos seguinte as
+diretrizes proposta em \cite{keele2007guidelines}: 
 \begin{itemize}
-  \item especificar uma ou mais sentenças de buscas que serão
+  \item Especificar uma ou mais sentenças de buscas que serão
     inseridas nas ferramentas de busca com o objetivo de recuperar os
     estudo preliminares que serão utilizados na revisão;
-  \item definir um conjunto de \textit{questões de pesquisa} que
+  \item Definir um conjunto de \textit{questões de pesquisa} que
     servirão de norte na condução do trabalho;
- \item  desenvolver um protocolo que definirá os procedimentos a serem adotados durante a revisão, ele servirá como um guia para a condução da revisão. 
+ \item Desenvolver um protocolo que definirá os procedimentos a serem adotados durante a revisão, ele servirá como um guia para a condução da revisão. 
 \end{itemize}
 
-Nas próximas subseções iremos detalhar cada um dos passos descrito anteriormente.
+Nas próximas subseções iremos detalhar cada um dos passos descrito
+anteriormente.
+\subsection{Questões de Pesquisa}
+\label{subsec:research_question}
+
+Definida a necessidade da Revisão Sistemática, a principal atividade
+da etapa de planejamento da revisão é \textit{definir as questões de
+  pesquisa}. As perguntas de revisão irão conduzir toda a metodologia
+de revisão sistemática: o processo de busca deve identificar estudos
+primários que abordam as questões de pesquisa; o processo de extração
+deve coletar os itens de dados necessários para responder às
+perguntas; o processo de análise de dados deve sintetizar as
+informações de tal modo que as perguntas posam ser respondidas. Para o
+estudo preliminar foram proposta as seguintes questões de pesquisa:
+\begin{itemize}
+  \item \textbf{$Q1$}: Quais são as ferramentas de Business Report que
+    suportam a XBRL?
+  \item \textbf{$Q2$}: Quais são os atributos comuns as ferramentas
+    que possibilitem a comparação entre elas?
+  \item \textbf{$Q3$}: Existem casos reais de utilização da ferramenta
+    (Estudos de Casos, Whitepapers e etc)?
+  \item \textbf{$Q4$}: Qual setor da economia (governos, medicina, financeiro) a
+    possui exemplos de utilização?
+\end{itemize}
+
+Conforme exposto as questões de pesquisas determinam as sentenças de
+buscam que possibilitam a coleta dos estudos primários. Na próxima
+subseção é será apresentado os resultados do estudo preliminar visando
+a definição da sentença de busca mais apropriada.
+
 \subsection{Sentenças de Busca}
 \label{subsec:setences}
 
@@ -128,11 +156,10 @@ bastante simples, consistindo apenas em registrar o total de artigos
 recuperados quando realizado uma pesquisa com uma sentença $S_n$
 qualquer. Não foi utilizado qualquer tipo de filtro na busca (como por
 exemplo "por data") e os resultados foram classificados por
-relevância. Apesar do simplicidade deste estudo ele se mostra como um
-bom ponto de partida para definirmos a sentenças de buscam que
-futuramente irão possibilitar a recuperação dos estudos preliminares. A tabela \ref{tab:sentencas} exibe as sentenças utilizadas bem como o total de artigos recuperados.
-
-
+relevância. Apesar do simplicidade deste procedimento, ele possibilita
+um bom ponto de partida para definirmos a sentenças de buscam que
+futuramente irão possibilitar a recuperação dos estudos preliminares. 
+A Tabela \ref{tab:sentencas} exibe as sentenças utilizadas bem como o total de artigos recuperados.
 \begin{table}[]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -150,7 +177,9 @@ futuramente irão possibilitar a recuperação dos estudos preliminares. A tabel
 \label{tab:sentencas}
 \end{table}
 
-Como pode ser observado a sentença $S_1$ é a consulta mais genérica que poderia ser feita sobre no contexto da XBRL, contudo, é retornado um total de $15000$ um valor relativamente pequeno comparado ao total de artigos retornados ao realizar consultas com o termo ``XML' por exemplo\footnote{A consulta por XML retorna aproximadamente $3 \times 10^{6}$ artigos}.
+Como pode ser observado a sentença $S_1$ é a consulta mais genérica
+que poderia ser feita sobre no contexto da XBRL, contudo, é retornado
+um total de $15000$ artigos, um valor relativamente pequeno comparado ao total retornado ao realizar consultas com o termo ``XML' por exemplo\footnote{A consulta por XML retorna aproximadamente $3 \times 10^{6}$ artigos}.
 
 Não obstante a sentença $S_6$ se mostrou satisfatória tanto pelo total
 de artigos recuperados bem como pela relevância dos mesmo, auferida
@@ -170,35 +199,52 @@ A Figura \ref{fig:graph_artigos_ano} mostra conforme esperado a
 redução do número de artigos quanto se limita o período de
 pesquisa. Em uma análise preliminar pode-se afirmar que a utilização
 de artigos publicados a partir de 2012 consegue englobar uma massa de
-artigos suficiente para um estudo ponto de partida. Posteriormente,
+dados suficiente para iniciar a revisão. Posteriormente,
 mediante o Protocolo da Revisão serão definidos critérios para
-inclusão e exclusão de ababalho na revisão. Os detalhes destas
+inclusão e exclusão dos estudos preliminares na revisão. Os detalhes destas
 diretrizes estão detalhadas na Subseção \ref{subsec:protocol}.
-
-\subsection{Questões de Pesquisa}
-\label{subsec:research_question}
-
-In work.
 
 \subsection{Protocolo de Desenvolvimento da Revisão}
 \label{subsec:protocol}
 
-Aguardando definições.
-
-\section{Survey com Stakeholders}
-\label{sec:survey}
-
-Avaliando viabilidade.
+Com o objetivo de guiar o desenvolvimento da revisão será definido um
+protocolo que determina os critérios para inclusão ou exclusão de um
+determinado estudo na revisão. Tal protocolo ainda está sendo
+construído, todavia, é etapa fundamental no processo de criação do SLR.
 
 \section{Cronograma}
 \label{sec:cronograma}
 
+A Tabela \ref{tab:cronograma} exibe o cronograma de execução da revisão, considerando
+também as etapas de apresentação do relatório produzido pela mesma.
 
-\section{Próximas Etapas}
-\label{sec:proximas_etapas}
-
-Aguardando definições.
-
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|c|c|}
+\hline
+\textbf{\#} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}\textbf{Atividade}}                                                                           & \cellcolor[HTML]{9B9B9B}\textbf{Previsão Início} & \cellcolor[HTML]{9B9B9B}\textbf{Previsão Término} \\ \hline
+01          & Enviar proposta de trabalho via EasyChair                                                                                                 & \textit{05/10/2015}                              & \textit{05/10/2015}                               \\ \hline
+02          & Coletar estudos primários com base no estudo preliminar & \textit{06/10/2015}                              & \textit{09/10/2015}                               \\ \hline
+03          & Desenvolver o Protocolo da Revisão                                                                                                        & \textit{12/10/2015}                              & \textit{15/10/2015}                               \\ \hline
+04          & Revisar o Protocolo com o orientador                                                                                                      & \textit{16/10/2015}                              & \textit{17/10/2015}                               \\ \hline
+05          & Aplicar correções sugeridas pelo orientador                                                                                               & \textit{19/10/2015}                              & \textit{20/10/2015}                               \\ \hline
+06          & Revisar o Protocolo com o orientador                                                                                                      & \textit{21/10/2015}                              & \textit{23/10/2015}                               \\ \hline
+07          & Coletar estudos primários                                                                                                                 & \textit{26/10/2015}                              & \textit{30/10/2015}                               \\ \hline
+08          & Selecionar estudos primários                                                                                                              & \textit{02/11/2015}                              & \textit{13/11/2015}                               \\ \hline
+09          & Avaliar a qualidade dos estudos primários                                                                                                 & \textit{16/11/2015}                              & \textit{18/11/2015}                               \\ \hline
+10          & Extrair dados do estudos primários                                                                                                        & \textit{19/11/2015}                              & \textit{24/11/2015}                               \\ \hline
+11          & Escrever Relatório Final                                                                                                                  & \textit{25/11/2015}                              & \textit{30/11/2015}                               \\ \hline
+12          & Revisar Relatório Final                                                                                                                   & \textit{01/12/2015}                              & \textit{03/12/2015}                               \\ \hline
+13          & Enviar Relatório Final via EasyChair                                                                                                      & \textit{04/12/2015}                              & \textit{04/12/2015}                               \\ \hline
+14          & Revisar os outros trabalhos do Workshop                                                                                                   & \textit{07/12/2015}                              & \textit{11/12/2015}                               \\ \hline
+15          & Apresentar o Relatório Final no Workshop                                                                                                  & \textit{14/12/2015}                              & \textit{16/12/2015}                               \\ \hline
+\end{tabular}
+}
+\caption{Atividades de execução da SLR}
+\label{tab:cronograma}
+\end{table}
+\pagebreak
 \medskip
 
 \bibliographystyle{unsrt}%Used BibTeX style is unsrt
