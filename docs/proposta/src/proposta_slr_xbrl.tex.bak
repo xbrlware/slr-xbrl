@@ -37,7 +37,7 @@ prestação regular de informações para os tomadores de decisão dentro
 de uma organização para apoiá-los em seu trabalho
 \cite{lymer1999business}. Há uma terceira via do Relatórios de Negócio
 relacionado ao processo de prestação de contas por entes públicos aos
-governos nacionais. A XBRL (\textit{eXtensible Relatórios de Negócio
+governos nacionais. A XBRL (\textit{eXtensible Relatórios de Negócioing
   Language}) é uma linguagem para divulgação e intercâmbio de
 informações financeiras baseada em
 XML\cite{xbrl_conceitos_aplicacoes}. O padrão vem sendo adotado por
@@ -50,7 +50,7 @@ de relatórios à órgãos de governo. A Figura \ref{fig:world_map} exibe
 os países que estão promovendo a adoção da XBRL. Estes países estão
 com a coloração mais escura no mapa-múndi.
 
-\begin{figure}[htb]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[width=.75\textwidth]{../img/world-map.png}
 \caption{O uso da XBRL no mundo}
@@ -81,7 +81,7 @@ estado de Minas Gerais. Ele foi informado pela diretoria da empresa
 que devido à mudanças legais, definidas pela Secretaria do Tesouro
 Nacional, as prestações de contas da prefeitura para o governo federal
 deverá ser realizada em um novo formato denominado XBRL, acrônimo de
-eXtensible Relatórios de Negócio Language. Arnaldo sabe que os sistemas
+eXtensible Relatórios de Negócioing Language. Arnaldo sabe que os sistemas
 de informação à serviço da prefeitura já são capazes de enviar
 relatório aos órgãos fiscalizadores nos formatos CSV (Comma-separated
 values) e xls (Microsoft Excel Binary File Format). Após uma análise
@@ -146,16 +146,17 @@ ferramenta ou técnica \cite{kitchenham2009systematic}.
 \section{Objetivos do Trabalho}
 \label{sec:objetivos}
 
-Este trabalho corresponde a dois estudos empíricos sobre o assunto \textit{XBRL}. A primeira parte consiste no
+O trabalho ora proposto tem como objetivo desenvolver dois trabalhos
+empíricos sobre o assunto \textit{XBRL}. A primeira parte consiste no
 desenvolvimento de uma \textit{Revisão Sistemática da Literatura -
   SLR} sobre ferramentas de \textit{Relatórios de Negócio} com suporte ao
-padrão XBRL. O público alvo do referido trabalho são pesquisadores,
+padrão XBRL. O público alvo do referido trabalho serão pesquisadores,
 programadores, gestores que precisam de uma fonte de informação
-independente que avalie as soluções existentes no mercado. A partir
-dos dados obtidos da \textit{SLR} deve ser possível, por exemplo, propor
+independente que avaliasse as soluções existentes no mercado. A partir
+dos dados obtidos da \textit{SLR} seria possível, por exemplo, propor
 novas Ferramentas ou mesmo melhorias nas existentes.
 
-A segunda parte do trabalho é a realização de uma Pesquisa com Usuário com
+A segunda parte do trabalho seria a realização de \textit{Survey} com
 pessoas que participam diretamente do processo de prestação de contas
 entre entes federativos. Dentre estas pessoas podemos citar
 contadores, desenvolvedores, gestores e etc que poderiam fornecer
@@ -168,7 +169,7 @@ ferramentas que efetivamente atendam as necessidades de seus usuários.
 
 Uma Revisão Sistemática da literatura (SLR), por se tratar de método
 científico, deve seguir uma sequência rigorosa de passos a fim de
-alcançar os seus objetivos. Algumas diretrizes orientam como sequências
+alcançar os seus objetivos. Alguns diretrizes orientam como sequências
 fundamentais no processo de desenvolvimento de uma
 SLR\cite{keele2007guidelines}, dentre outras: 
 \begin{itemize}
@@ -180,7 +181,7 @@ SLR\cite{keele2007guidelines}, dentre outras:
  \item  desenvolver um protocolo que definirá os procedimentos a serem adotados durante a revisão, ele servirá como um guia para a condução da revisão. 
 \end{itemize}
 
-Nas próximas subseções detalhamos cada um dos passos descrito
+Nas próximas subseções iremos detalhar cada um dos passos descrito
 anteriormente.
 
 \subsection{Questões de Pesquisa}
@@ -207,7 +208,7 @@ estudo preliminar foram proposta as seguintes questões de pesquisa:
 Conforme exposto as questões de pesquisas determinam as sentenças de
 buscam que possibilitam a coleta dos estudos primários. Na próxima
 subseção é será apresentado os resultados do estudo preliminar visando
-a definição da sentença de busca \textit{(search string)} mais apropriada.
+a definição da sentença de busca mais apropriada.
 
 \subsection{Sentenças de Busca}
 \label{subsec:setences}
@@ -251,9 +252,9 @@ de artigos recuperados bem como pela relevância dos mesmo, auferida
 pela inspeção manual de alguns resultados. Visando avaliar o impacto
 de restringir o ano de publicação na sentença $S_6$ foi realizada um
 novo conjunto de buscas no qual foi utilizado o critério de seleção
-``artigos a parte do ano X''.  Os resultados são exibidos na Figura \ref{fig:graph_artigos_ano}{}.
+``artigos a parte do ano''.  Os resultados são exibidos na Figura \ref{fig:graph_artigos_ano}{}.
 
-\begin{figure}[htb]
+\begin{figure}[h] 
 \label{fig:graph_artigos_ano}
 \includegraphics[width=8cm]{../img/graph_01.eps}
 \caption{Total de artigo a partir de determinado ano para a sentença $S_6$}
