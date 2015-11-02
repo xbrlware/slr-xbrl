@@ -23,21 +23,20 @@ Ferramentas para Relatório de Negócio com Suporte à XBRL
 \section{Introdução}
 \label{sec:intro}
 
-O presente documento tem por objetivo descrever a proposta para o
-trabalho final da disciplina Engenharia de Software Experimental. O
-trabalho a ser realizado consiste na realização de uma Revisão Sistemática da
-Literatura sobre \textit{ferramentas para Relatórios de Negócio com suporte à linguagem XBRL}. Uma \textit{Revisão Sistemática da Literatura} - SLR (do inglês Systematic Literature Review) é uma
+O presente documento tem por objetivo descrever uma proposta de
+trabalho acadêmico que  consiste na realização de uma Revisão Sistemática da
+Literatura sobre o tema \textit{ferramentas para Relatórios de Negócio com suporte à linguagem XBRL}. Uma \textit{Revisão Sistemática da Literatura} - SLR (do inglês Systematic Literature Review) é uma
 metodologia científica cujo objetivo é identificar, avaliar e interpretar
 \textit{toda} pesquisa \textit{relevante} sobre uma questão de
 pesquisa, área ou fenômeno de
 interesse\cite{keele2007guidelines,wohlin2012experimentation}. \textit{Relatórios
-  de Negócio (Business Report)} é processo de divulgação
-pública de dados operacionais e financeiras de uma empresa ou a
-prestação regular de informações para os tomadores de decisão dentro
-de uma organização para apoiá-los em seu trabalho
-\cite{lymer1999business}. Há uma terceira via do Relatórios de Negócio
-relacionado ao processo de prestação de contas por entes públicos aos
-governos nacionais. A XBRL (\textit{eXtensible Relatórios de Negócioing
+  de Negócio (Business Report)} é o produto final do  processo de divulgação
+pública de dados operacionais e financeiras de uma organização ou
+ainda a prestação regular de informações para os gestores dentro
+de uma empresa visado apoiá-los no processo de tomada de decisão.
+\cite{lymer1999business}. Há uma terceira via da área de  Relatórios de Negócio
+está relacionada ao processo de prestação de contas por entes públicos aos
+governos nacionais. A XBRL (\textit{eXtensible Relatórios de Negócio
   Language}) é uma linguagem para divulgação e intercâmbio de
 informações financeiras baseada em
 XML\cite{xbrl_conceitos_aplicacoes}. O padrão vem sendo adotado por
@@ -50,13 +49,17 @@ de relatórios à órgãos de governo. A Figura \ref{fig:world_map} exibe
 os países que estão promovendo a adoção da XBRL. Estes países estão
 com a coloração mais escura no mapa-múndi.
 
-\begin{figure}[hbtp]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=.75\textwidth]{../img/world-map.png}
 \caption{O uso da XBRL no mundo}
 \label{fig:world_map}
 \end{figure}
 
+Nas próximas seções iremos detalhar o estudo proposto
+inicialmente discutindo a justificativa do trabalho  e posteriormente
+detalhando um estudo prévio realizado conforme as diretrizes propostas
+por \cite{kitchenham2009systematic}. 
 \section{Justificativa}
 \label{sec:contexto}
 
@@ -68,49 +71,46 @@ destes últimos do \textit{desenvolvimento ou aquisição} de sistemas de
 informação capazes de criar, processar e enviar informações no formato
 XBRL. Como o objetivo de deixar mais claro o contexto no qual esta
 necessidade se apresenta analisemos a seguir um cenário em que o
-problema se apresenta conforme a narrativa a seguir.
+problema se apresenta conforme a narrativa a seguir:
 \\
 \\
 \begin{center}
 \fbox{
 \begin{minipage}{28em}
-%\textit{
 Arnaldo é gerente de projeto em uma empresa responsável pelo
 desenvolvimento de sistemas para uma prefeitura de médio porte no
 estado de Minas Gerais. Ele foi informado pela diretoria da empresa
 que devido à mudanças legais, definidas pela Secretaria do Tesouro
 Nacional, as prestações de contas da prefeitura para o governo federal
-deverá ser realizada em um novo formato denominado XBRL, acrônimo de
-eXtensible Relatórios de Negócioing Language. Arnaldo sabe que os sistemas
+devem ser realizadas em um novo formato denominado XBRL, acrônimo de
+eXtensible Businees Report Language. Arnaldo sabe que os sistemas
 de informação à serviço da prefeitura já são capazes de enviar
 relatório aos órgãos fiscalizadores nos formatos CSV (Comma-separated
 values) e xls (Microsoft Excel Binary File Format). Após uma análise
-do problema, o gerente estabeleces que há dois possíveis caminhos para atender a demanda da prefeitura:
+do problema, o gerente estabelece dois possíveis caminhos para atender a demanda da prefeitura:
 
 \begin{enumerate}[(i)]
-\item Adquirir uma ferramenta de terceiros com suporte à prestação de contas no formato XBRL;
-\item Desenvolver na própria empresa um  sistema de informação de informação que possibilite a prestação de conta no formato requirido mas que também possibilite a geração nos formatos já utilizados;
+\item Adquirir ferramenta de terceiros com suporte à prestação de contas no formato XBRL;
+\item Desenvolver na própria empresa um sistema de informação que possibilite a prestação de conta no formato requirido mas que também possibilite a geração nos formatos já utilizados;
 \end{enumerate}
 
-Naturalmente ambas as soluções possuem aspectos que podem ser
+Naturalmente ambas soluções possuem aspectos que podem ser
 considerados \textit{positivos e negativos}. Caso a
 organização opte por \textit{adquirir} (opção (i)) ela não precisará
 enfrentar o risco do baixo conhecimento que existe atualmente na
 equipe com relação ao assunto \textit{XBRL}. Todavia, o sistema
-comprado por terceiros poderá não atender a todos aos requisitos
-necessários sendo necessário uma adequação posterior, no qual
-experiências anteriores demonstraram que implicam em um maior custo
+comprado de terceiros poderá não atender a todos aos requisitos sendo necessário uma adequação posterior, no qual implicam em um maior custo
 para a organização. De outra forma, a criação de um projeto (opção
 ii) possui uma maior probabilidade de aderência aos requisitos, em
 contrapartida possui os desafios naturais da construção de um sistema
-do zero.
+a partir do zero.
 
 A fim de subsidiar a decisão de qual opção a ser tomada, Arnaldo realiza
 uma busca na Internet de por comparações entre ferramentas para
 Relatórios de Negócio com suporte à XBRL, contudo, os resultados se mostram
 incipientes. Ele novamente utiliza uma ferramenta de busca com
 objetivo de pesquisar sobre boas práticas e lições apreendidas que
-possa ajudar na construção de ferramentas para Relatórios de Negócio e novamente fica decepcionado com os dados retornado. Arnaldo sente-se frustrado por não conseguir referências que o ajude em definir entre a solução (i) e (ii).
+possa ajudar na construção de ferramentas para Relatórios de Negócio e novamente fica decepcionado com os dados retornados. Arnaldo sente-se frustrado por não conseguir referências que o ajude em definir entre a solução (i) e (ii).
 %}
 \end{minipage}
 }
@@ -119,19 +119,20 @@ possa ajudar na construção de ferramentas para Relatórios de Negócio e novam
 Ao analisarmos o problema descrito no estudo de caso do gerente
 Arnaldo, verifica-se que existe a necessidade por parte das
 organizações, especialmente as entidades públicas, de referências de
-qualidade sobre o assunto de \textit{XBRL}. Trabalhos com este enfoque
+qualidade sobre o assunto de \textit{Ferramentas para Relatórios de
+  Negócio com Suporto à XBRL}. Trabalhos com este enfoque
 podem \textit{subsidiar a tomada de decisão} por parte dos gestores
 públicos. Por exemplo, para aqueles inclinados para a \textit{solução
   (i)} podem utilizar uma  \textit{Revisão Sistemática da
   Literatura} - SLR (do inglês Systematic Literature Review) que
 avalie as ferramentas para Relatórios de Negócio que dão suporte ao
 XBRL. No caso daqueles voltados para a  \textit{solução (ii)} a
-estratégia empírica que melhor lhe daria suporte seria um Pesquisa de Campo
+estratégia empírica que melhor daria suporte seria um Pesquisa com Usuários
 \textit{Survey} que colete dados de diferentes partes
 interessadas (stakeholders) sobre o processo de prestação de contas
 das diversas prefeituras do país e avalie as melhores práticas
 e lições aprendidas no desenvolvimento e utilização de sistema de
-informação para aquela finalidade.
+informação para esta finalidade.
 
 Neste contexto, propõe com este trabalho a realização de Revisão
 Sistemática da Literatura bem como de uma Pesquisa com Usuário
@@ -146,32 +147,31 @@ ferramenta ou técnica \cite{kitchenham2009systematic}.
 \section{Objetivos do Trabalho}
 \label{sec:objetivos}
 
-O trabalho ora proposto tem como objetivo desenvolver dois trabalhos
-empíricos sobre o assunto \textit{XBRL}. A primeira parte consiste no
+Este trabalho corresponde a dois estudos empíricos tendo como base a \textit{XBRL}. A primeira parte consiste no
 desenvolvimento de uma \textit{Revisão Sistemática da Literatura -
   SLR} sobre ferramentas de \textit{Relatórios de Negócio} com suporte ao
-padrão XBRL. O público alvo do referido trabalho serão pesquisadores,
+padrão XBRL. O público alvo do referido trabalho são pesquisadores,
 programadores, gestores que precisam de uma fonte de informação
-independente que avaliasse as soluções existentes no mercado. A partir
-dos dados obtidos da \textit{SLR} seria possível, por exemplo, propor
-novas Ferramentas ou mesmo melhorias nas existentes.
+independente que avalie as soluções existentes no mercado. A partir
+dos dados obtidos da \textit{SLR} deve ser possível, por exemplo, propor
+novas ferramentas ou mesmo melhorias nas existentes.
 
-A segunda parte do trabalho seria a realização de \textit{Survey} com
-pessoas que participam diretamente do processo de prestação de contas
+A segunda parte do trabalho é a realização de uma Pesquisa com Usuário
+tendo como alvo pessoas que participam diretamente do processo de prestação de contas
 entre entes federativos. Dentre estas pessoas podemos citar
 contadores, desenvolvedores, gestores e etc que poderiam fornecer
 detalhes sobre o atual contexto daquele processo. Os dados fornecidos
-por aqueles profissionais pode ajudar no desenvolvimento de
-ferramentas que efetivamente atendam as necessidades de seus usuários.
+por estes profissionais pode ajudar no desenvolvimento de
+ferramentas que efetivamente atendam as necessidades de seus diversos usuários.
 
 \section{Revisão Sistemática da Literatura}
 \label{sec:rsl}
 
 Uma Revisão Sistemática da literatura (SLR), por se tratar de método
 científico, deve seguir uma sequência rigorosa de passos a fim de
-alcançar os seus objetivos. Alguns diretrizes orientam como sequências
-fundamentais no processo de desenvolvimento de uma
-SLR\cite{keele2007guidelines}, dentre outras: 
+alcançar os seus objetivos. Algumas diretrizes orientam o processo de desenvolvimento de uma
+SLR\cite{keele2007guidelines}. Algumas destas orientações são listadas
+a seguir:
 \begin{itemize}
   \item especificar uma ou mais sentenças de buscas que serão
     inseridas nas ferramentas de busca com o objetivo de recuperar os
@@ -181,19 +181,19 @@ SLR\cite{keele2007guidelines}, dentre outras:
  \item  desenvolver um protocolo que definirá os procedimentos a serem adotados durante a revisão, ele servirá como um guia para a condução da revisão. 
 \end{itemize}
 
-Nas próximas subseções iremos detalhar cada um dos passos descrito
-anteriormente.
+Nas próximas subseções detalhamos cada um dos passos descritos anteriormente.
 
 \subsection{Questões de Pesquisa}
 \label{subsec:research_question}
 
-As questões propostas conduzem toda a metodologia
-de revisão sistemática, em especial: o processo de busca deve identificar estudos
+As questões de pesquisa conduzem toda a metodologia
+de uma revisão sistemática, em especial: o processo de busca deve identificar estudos
 primários que abordam as questões de pesquisa; a extração
 deve coletar os itens de dados necessários para responder às
 perguntas; a análise de dados deve sintetizar as
-informações de tal modo que as perguntas posam ser respondidas. Para o
-estudo preliminar foram proposta as seguintes questões de pesquisa:
+informações de tal modo que as perguntas posam ser respondidas. 
+
+Para o estudo preliminar foram proposta as seguintes questões de pesquisa:
 \begin{itemize}
   \item \textbf{$Q1$}: Quais são as ferramentas de Relatórios de Negócio que
     suportam a XBRL?
@@ -208,7 +208,7 @@ estudo preliminar foram proposta as seguintes questões de pesquisa:
 Conforme exposto as questões de pesquisas determinam as sentenças de
 buscam que possibilitam a coleta dos estudos primários. Na próxima
 subseção é será apresentado os resultados do estudo preliminar visando
-a definição da sentença de busca mais apropriada.
+a definição da sentença de busca \textit{(search string)} mais apropriada.
 
 \subsection{Sentenças de Busca}
 \label{subsec:setences}
@@ -252,9 +252,9 @@ de artigos recuperados bem como pela relevância dos mesmo, auferida
 pela inspeção manual de alguns resultados. Visando avaliar o impacto
 de restringir o ano de publicação na sentença $S_6$ foi realizada um
 novo conjunto de buscas no qual foi utilizado o critério de seleção
-``artigos a parte do ano''.  Os resultados são exibidos na Figura \ref{fig:graph_artigos_ano}{}.
+``artigos a parte do ano X''.  Os resultados são exibidos na Figura \ref{fig:graph_artigos_ano}{}.
 
-\begin{figure}[h] 
+\begin{figure}[htb]
 \label{fig:graph_artigos_ano}
 \includegraphics[width=8cm]{../img/graph_01.eps}
 \caption{Total de artigo a partir de determinado ano para a sentença $S_6$}
