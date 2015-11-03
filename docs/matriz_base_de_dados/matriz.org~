@@ -1,0 +1,23 @@
+#+AUTHOR: Vagner Clementino
+#+DATE: <2015-11-03 ter>
+#+TITLE: Matriz de Base de Dados
+
+
+|                      | 1 | 2 |   |   |   |
+|----------------------+---+---+---+---+---|
+| IEEE Xplore          | X | X |   |   |   |
+| ScienceDirect        | X | X |   |   |   |
+| Springer Link        | X |   |   |   |   |
+| ACM Digital Library  | X | X |   |   |   |
+| Web of Science       | X | X |   |   |   |
+| CiteSeer             | X |   |   |   |   |
+| Wiley Online Library | X |   |   |   |   |
+| Scopus Elsevier      | X |   |   |   |   |
+| EL Compendex         | X | X |   |   |   |
+| INSPEC               | X | X |   |   |   |
+
+
+
+1-"Trends, Opportunities and Challenges of Software Refactoring: A
+Systematic Literature Review"
+2 - "A Systematic Review of Cross- vs. Within- Company Cost Estimation Studies "

@@ -1,0 +1,26 @@
+#+AUTHOR: Vagner Clementino
+#+DATE: <2015-11-03 ter>
+#+TITLE: Matriz de Base de Dados
+
+
+|                                                                                      | [1] | [2] | [3] |   |   |
+|--------------------------------------------------------------------------------------+-----+-----+-----+---+---|
+| IEEE Xplore (<http://ieeexplore.ieee.org>)                                           | X   | X   | X   |   |   |
+| ScienceDirect (<http://www.sciencedirect.com>)                                       | X   | X   | X   |   |   |
+| Springer Link                                                                        | X   |     |     |   |   |
+| ACM Digital Library (<http://portal.acm.org>)                                        | X   | X   | X   |   |   |
+| Web of Science                                                                       | X   | X   |     |   |   |
+| CiteSeer (<http://citeseer.ist.psu.edu>)                                             | X   |     | X   |   |   |
+| Wiley Online Library                                                                 | X   |     |     |   |   |
+| Scopus Elsevier                                                                      | X   |     |     |   |   |
+| EL Compendex (<http://www.engineeringvillage2.org/controller/servlet/athensservice>) | X   | X   | X   |   |   |
+| Google scholar (<http://scholar.google.com>)                                         |     |     | X   |   |   |
+| Keele University’s electronic library (<http://opac.keele.ac.uk>)                    |     |     | X   |   |   |
+| INSPEC (<http://www.iee.org/publish/inspec/>)                                        | X   | X   | x   |   |   |
+
+
+
+[1] Trends, Opportunities and Challenges of Software Refactoring: A
+Systematic Literature Review"
+[2] A Systematic Review of Cross- vs. Within- Company Cost Estimation Studies
+[3] Lessons from applying the systematic literature review process within the software engineering domain
