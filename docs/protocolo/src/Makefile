@@ -1,5 +1,5 @@
-NAME=proposta_slr_xbrl
-BIBLIOGRAPHY=../bib/propostaref.bib
+NAME=protocolo_slr_xbrl
+BIBLIOGRAPHY=../bib/$(NAME).bib
 DIR_PDF_NAME=../pdf/
 all: aspell compile clean
 compile: $(NAME).tex #$(BIBLIOGRAPHY).bib
