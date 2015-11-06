@@ -152,9 +152,7 @@ Outra ferramenta ser utilizada no processo de coleta dos estudos primários é o
 termos similares aos originais que podem aumentar o leque de artigos
 recuperados durante a busca. A Tabela \ref{tab:dicionario} exibe o dicionário de dados que deverá ser utilizado durante a Revisão.
 
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-\begin{table}[]
+\begin{table}[ht]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|l|}
@@ -173,18 +171,87 @@ Business Report & Report OR Data Extraction \\ \hline
 
 \section{Critérios de Inclusão e Exclusão de Estudos}
 \label{sec:criterios_in_out}
+Nesta seção define-se os critérios para a inclusão de determinado estudo
+primário na Revisão. Naturalmente o estudo deverá as diretrizes propostas bem
+como passar pelo crivo da avaliação de qualidade, conforme disposto na Seção
+\ref{sec:qualidade}.
+
+Tendo em vista que os estudo primários serão selecionados de diversas bases de
+dados (vide Tabela \ref{tab:base-dados}) possivelmente ocorrerá duplicação de
+resultados. Neste sentido o primeiro critério para aceitação de um determinado
+estudo é que ele seja único. Para ajudar nesta tarefa poderá ser utilizado
+ferramentas para a gestão de referências como por exemplo
+\textit{JabRef}\footnote{\url{http://jabref.sourceforge.net/}}.
+
+Finalizada a remoção das possíveis duplicatas o próximo passar é escolher os
+artigos que possuem relevância com o tema da revisão utilizando o respectivo
+título. Embora o título nem sempre são claros suficientes em descrever por
+completo um trabalho, este processo ajuda a reduzir o conjunto inicial de
+estudos primários. Não obstante, caso exista qualquer dúvida quando a
+inclusão/exclusão de determinado trabalho este deverá ser marcado para revisão
+por outro especialista.
+
+Os artigos que forem incluídos segundo o critério do parágrafo anterior deverão
+ser reavaliados com base em seu resumo (\textit{abstract}). Da mesma forma,
+deve ser verificado se o resumo do trabalho está condizente com o tema da
+Revisão Sistemática. Eventuais dúvidas poderão ser sanadas mediante a revisão
+em pares.
+
+Os trabalhos que tiveram aprovação nas três etapas anteriores deverá ter sua
+qualidade avaliada conforme proposto na Seção \ref{sec:qualidade}.
 
 \section{Avaliação da Qualidade}
 \label{sec:qualidade}
 
+TODO. AGUADANDO SUGESTÕES.
+
 \section{Extração dos Dados}
 \label{sec:extracao_dados}
 
+
+TODO. AGUADANDO SUGESTÕES.
+
+
 \section{Estratégia de Disseminação}
 \label{sec:dissiminacao}
-
+O resultados da Revisão Sistemática serão consolidados em um artigo a ser
+apresentado ao alunos da disciplina Engenharia de Software Experimental do
+Programa de Pós Graduação em Ciência da Computação da Universidade Federal de
+Minas Gerais(UFMG). Posteriormente o trabalho poderá ser revisto visando a
+publicação em conferências ou periódicos.
 \section{Cronograma}
 \label{sec:cronograma}
+
+
+A Tabela \ref{tab:cronograma} exibe o cronograma de execução da revisão, considerando
+também as etapas de apresentação do relatório produzido pela mesma.
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|c|c|}
+\hline
+\textbf{\#} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}\textbf{Atividade}}                                                                           & \cellcolor[HTML]{9B9B9B}\textbf{Previsão Início} & \cellcolor[HTML]{9B9B9B}\textbf{Previsão Término} \\ \hline
+01          & Enviar proposta de trabalho via EasyChair                                                                                                 & \textit{05/10/2015}                              & \textit{05/10/2015}                               \\ \hline
+02          & Coletar estudos primários com base no estudo preliminar & \textit{06/10/2015}                              & \textit{09/10/2015}                               \\ \hline
+03          & Desenvolver o Protocolo da Revisão                                                                                                        & \textit{12/10/2015}                              & \textit{15/10/2015}                               \\ \hline
+04          & Revisar o Protocolo com o orientador                                                                                                      & \textit{16/10/2015}                              & \textit{17/10/2015}                               \\ \hline
+05          & Aplicar correções sugeridas pelo orientador                                                                                               & \textit{19/10/2015}                              & \textit{20/10/2015}                               \\ \hline
+06          & Revisar o Protocolo com o orientador                                                                                                      & \textit{21/10/2015}                              & \textit{23/10/2015}                               \\ \hline
+07          & Coletar estudos primários                                                                                                                 & \textit{26/10/2015}                              & \textit{30/10/2015}                               \\ \hline
+08          & Selecionar estudos primários                                                                                                              & \textit{02/11/2015}                              & \textit{13/11/2015}                               \\ \hline
+09          & Avaliar a qualidade dos estudos primários                                                                                                 & \textit{16/11/2015}                              & \textit{18/11/2015}                               \\ \hline
+10          & Extrair dados do estudos primários                                                                                                        & \textit{19/11/2015}                              & \textit{24/11/2015}                               \\ \hline
+11          & Escrever Relatório Final                                                                                                                  & \textit{25/11/2015}                              & \textit{30/11/2015}                               \\ \hline
+12          & Revisar Relatório Final                                                                                                                   & \textit{01/12/2015}                              & \textit{03/12/2015}                               \\ \hline
+13          & Enviar Relatório Final via EasyChair                                                                                                      & \textit{04/12/2015}                              & \textit{04/12/2015}                               \\ \hline
+14          & Revisar os outros trabalhos do Workshop                                                                                                   & \textit{07/12/2015}                              & \textit{11/12/2015}                               \\ \hline
+15          & Apresentar o Relatório Final no Workshop                                                                                                  & \textit{14/12/2015}                              & \textit{16/12/2015}                               \\ \hline
+\end{tabular}
+}
+\caption{Atividades de execução da SLR}
+\label{tab:cronograma}
+\end{table}
 
 \medskip
 \bibliographystyle{unsrt}%Used BibTeX style is unsrt

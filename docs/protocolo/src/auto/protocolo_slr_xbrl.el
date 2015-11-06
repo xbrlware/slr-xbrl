@@ -34,7 +34,8 @@
     "sec:qualidade"
     "sec:extracao_dados"
     "sec:dissiminacao"
-    "sec:cronograma")
+    "sec:cronograma"
+    "tab:cronograma")
    (LaTeX-add-bibliographies
     "../bib/protocolo_slr_xbrl")))
 
