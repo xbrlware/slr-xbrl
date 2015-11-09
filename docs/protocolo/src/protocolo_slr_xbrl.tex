@@ -103,7 +103,13 @@ Os guias de boas práticas na execução de uma Revisão Sistemática, especialm
 
 Definida as bases de dados que serão consultados é necessário definir as sentenças de buscas que serão aplicadas visando recuperar os estudos primários que serão utilizados na Revisão. Para tanto, foi conduzido um estudo preliminar visando definir um conjunto de termos que possam ser utilizados no processo de busca. Com o tema da revisão é ferramentas de Relatórios de Negócio com suporte à XBRL, naturalmente sentenças como ``XBRL", ``tools", ``Business Report"\footnote{No estudo preliminar foi utilizado apenas termos em língua inglesa} são possíveis candidatos.
 
-A fim de avaliar qual sentença de busca possibilitaria um conjunto de estudos preliminares com maior relevância para o trabalho, foi realizada um estudo prévio utilizando a ferramenta de pesquisa Google Schoolar\footnote{\url{https://scholar.google.com.br/}}. O estudo é bastante simples, consistindo apenas em registrar o total de artigos recuperados quando realizado uma pesquisa com uma sentença $S_n$ qualquer. Não foi utilizado qualquer tipo de filtro na busca (como por exemplo "por data") e os resultados foram classificados por relevância. Apesar do simplicidade deste procedimento, ele possibilita um bom ponto de partida para definirmos a sentenças de busca que futuramente irão possibilitar a recuperação dos estudos preliminares.
+A fim de avaliar qual sentença de busca possibilitaria um conjunto de estudos
+preliminares com maior relevância para o trabalho, foi realizada um estudo
+prévio utilizando a ferramenta de pesquisa Google
+Schoolar\footnote{\url{https://scholar.google.com.br/}}. O estudo é bastante
+simples, consistindo apenas em registrar o total de artigos recuperados quando
+se realiza uma pesquisa com uma sentença $S_n$ qualquer. Utilizou-se a pesquisa
+avançada impondo-se a restrição ``com a frase exata''. Cabe ressaltar que não foi utilizado qualquer tipo de filtro na busca (como por exemplo "por data") e os resultados foram classificados por relevância. Apesar do simplicidade deste procedimento, ele possibilita um bom ponto de partida para definirmos a sentenças de busca que futuramente irão possibilitar a recuperação dos estudos preliminares.
 
 A Tabela \ref{tab:sentencas} exibe as sentenças utilizadas bem como o total de artigos recuperados.
 \begin{table}[htb]
@@ -112,11 +118,11 @@ A Tabela \ref{tab:sentencas} exibe as sentenças utilizadas bem como o total de 
 \begin{tabular}{clc}
 \rowcolor[HTML]{EFEFEF}
 {\bf Código da Sentença} & \multicolumn{1}{c}{\cellcolor[HTML]{EFEFEF}{\bf Sentença}} & {\bf Total de Artigos}     \\ \hline
-\multicolumn{1}{|c|}{$S_1$} & \multicolumn{1}{l|}{“XBRL”}                                & \multicolumn{1}{c|}{15000} \\ \hline
-\multicolumn{1}{|c|}{$S_2$} & \multicolumn{1}{l|}{“XBRL tools”}                          & \multicolumn{1}{c|}{3710}  \\ \hline
-\multicolumn{1}{|c|}{$S_3$} & \multicolumn{1}{l|}{“XBRL Business Report tools”}          & \multicolumn{1}{c|}{4110}  \\ \hline
-\multicolumn{1}{|c|}{$S_4$} & \multicolumn{1}{l|}{“XBRL tools marketing”}                & \multicolumn{1}{c|}{1290}  \\ \hline
-\multicolumn{1}{|c|}{$S_5$} & \multicolumn{1}{l|}{“XBRL Business Report software tools”} & \multicolumn{1}{c|}{2970}  \\ \hline
+\multicolumn{1}{|c|}{$S_1$} & \multicolumn{1}{l|}{“XBRL”}                                & \multicolumn{1}{c|}{15100} \\ \hline
+\multicolumn{1}{|c|}{$S_2$} & \multicolumn{1}{l|}{“XBRL tools”}                          & \multicolumn{1}{c|}{108}  \\ \hline
+\multicolumn{1}{|c|}{$S_3$} & \multicolumn{1}{l|}{“XBRL Business Report tools”}          & \multicolumn{1}{c|}{205}  \\ \hline
+\multicolumn{1}{|c|}{$S_4$} & \multicolumn{1}{l|}{“XBRL tools marketing”}                & \multicolumn{1}{c|}{0}  \\ \hline
+\multicolumn{1}{|c|}{$S_5$} & \multicolumn{1}{l|}{“XBRL Business Report software tools”} & \multicolumn{1}{c|}{0}  \\ \hline
 \end{tabular}
 }
 \caption{Total de artigos por sentença}
@@ -125,27 +131,31 @@ A Tabela \ref{tab:sentencas} exibe as sentenças utilizadas bem como o total de 
 
 Como pode ser observado a sentença $S_1$ é a consulta mais genérica
 que poderia ser feita sobre no contexto da XBRL, contudo, é retornado
-um total de $15000$ artigos, um valor relativamente pequeno comparado ao total retornado ao realizar consultas com o termo ``XML' por exemplo\footnote{A consulta por XML retorna aproximadamente $3 \times 10^{6}$ artigos}.
+um total de $15100$ artigos, um valor relativamente pequeno comparado ao total retornado ao realizar consultas com o termo ``XML' por exemplo\footnote{A consulta por XML retorna aproximadamente $3 \times 10^{6}$ artigos}.
 
-Não obstante a sentença $S_6$ se mostrou satisfatória tanto pelo total
+Não obstante a sentença $S_3$ se mostrou satisfatória tanto pelo total
 de artigos recuperados bem como pela relevância dos mesmo, auferida
 pela inspeção manual de alguns resultados. Visando avaliar o impacto
-de restringir o ano de publicação na sentença $S_6$ foi realizada um
+de restringir o ano de publicação na sentença $S_3$ foi realizada um
 novo conjunto de buscas no qual foi utilizado o critério de seleção
-``artigos a partir do ano''.  Os resultados são exibidos na Figura \ref{fig:graph_artigos_ano}{}.
+``artigos a partir do ano $X$'', onde $X$ é um ano a partir de 2003\footnote{A
+  pesquisa inicia-se a partir de 2003 tendo em vista que naquele ano foi
+  lançada oficialmente a primeira especificação da XBRL (vide \url{http://specifications.xbrl.org/release-history-base-spec-xbrl-2.1.html})}  Os resultados são exibidos na Figura \ref{fig:graph_artigos_ano}{}.
 
 \begin{figure}[h]
-\label{fig:graph_artigos_ano}
-\includegraphics[width=8cm]{../img/graph_01.eps}
-\caption{Total de artigo a partir de determinado ano para a sentença $S_5$}
 \centering
+\label{fig:graph_artigos_ano}
+\includegraphics[width=15cm]{../img/graph_01.eps}
+\caption{Total de artigo a partir de determinado ano para a sentença $S_3$}
 \end{figure}
 
 A Figura \ref{fig:graph_artigos_ano} mostra conforme esperado a
 redução do número de artigos quanto se limita o período de
 pesquisa. Em uma análise preliminar pode-se afirmar que a utilização
-de artigos publicados a partir de 2012 consegue englobar uma massa de
-dados suficiente para iniciar a revisão.
+de artigos publicados a partir de \textit{2009} consegue englobar uma massa de
+dados suficiente para iniciar a revisão. Além disso em 2009 foi lançada a
+versão mais recente da especificação da XBRL\cite{xbrl_conceitos_aplicacoes},
+denominada XBRL $2.1$.
 
 Outra ferramenta ser utilizada no processo de coleta dos estudos primários é o
 \textit{Dicionários de Sinônimos} que consiste basicamente de um conjunto de
@@ -203,13 +213,13 @@ qualidade avaliada conforme proposto na Seção \ref{sec:qualidade}.
 \section{Avaliação da Qualidade}
 \label{sec:qualidade}
 
-TODO. AGUADANDO SUGESTÕES.
+TODO. AGUARDANDO SUGESTÕES.
 
 \section{Extração dos Dados}
 \label{sec:extracao_dados}
 
 
-TODO. AGUADANDO SUGESTÕES.
+TODO. AGUARDANDO SUGESTÕES.
 
 
 \section{Estratégia de Disseminação}
@@ -252,6 +262,8 @@ também as etapas de apresentação do relatório produzido pela mesma.
 \caption{Atividades de execução da SLR}
 \label{tab:cronograma}
 \end{table}
+
+\pagebreak
 
 \medskip
 \bibliographystyle{unsrt}%Used BibTeX style is unsrt
