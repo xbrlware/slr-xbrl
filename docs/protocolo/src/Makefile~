@@ -7,7 +7,7 @@ compile: $(NAME).tex #$(BIBLIOGRAPHY).bib
 	@bibtex $(NAME)
 	@pdflatex $(NAME).tex
 	@pdflatex $(NAME).tex
-	@evince $(NAME).pdf
+	#@evince $(NAME).pdf
 	@mv $(NAME).pdf $(DIR_PDF_NAME)
 	@echo Gerado o arquivo $(NAME).pdf no diretório $(DIR_PDF_NAME)
 clean:

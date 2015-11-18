@@ -25,7 +25,13 @@
 ** Total de Artigos
    - 110 Artigos
 * Web of Science
+** String de Busca :
+   + XBRL AND Business Report AND tool
+** Total de Artigos : 9
+** Observações : Finantial = Business
 * CiteSeer
+** String de Busca
+   - text:(XBRL AND Business Report AND tool) AND year:[2008 TO 2015]
 * Wiley Online Library
 * Scopus Elsevier
 * EL Compendex
