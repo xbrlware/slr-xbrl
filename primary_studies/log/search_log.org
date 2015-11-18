@@ -1,0 +1,36 @@
+* IEEE Xplore
+** Strins Utilizadas
+   - XBRL AND Business Report AND tool
+** Total de Artigos : 3
+** Período consultado: 2008 a 2015
+* ScienceDirect
+** Strins Utilizadas
+   + XBRL AND Business Report AND tool
+   +
+** Total de Artigos : 109
+** Observações adicionais
+   + O resultado contêm livros
+   + Tipo de publicação
+   + Local de publicação
+   + Area do conhecimento
+* Springer Link
+** String Utilizadas
+   + "XBRL tool"
+** Total de Artigos : 6
+** Observações
+   + Export .bib um a um.
+* ACM Digital Library
+** Strings Utilizadas
+   - XBRL AND Business Report AND tool
+** Total de Artigos
+   - 110 Artigos
+* Web of Science
+* CiteSeer
+* Wiley Online Library
+* Scopus Elsevier
+* EL Compendex
+* Google scholar
+* INSPEC
+
+
+application OR product OR project OR development
