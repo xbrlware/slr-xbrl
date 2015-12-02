@@ -1,0 +1,51 @@
+% Encoding: UTF-8
+
+
+@InProceedings{HwangLeemMoon2008,
+  Title                    = {A Study on Relationships among Accounting Transparency, Accounting Information Transparency, and XBRL},
+  Author                   = {Jib Seung Hwang and Choon Seong Leem and Hyung Joon Moon},
+  Booktitle                = {Convergence and Hybrid Information Technology, 2008. ICCIT '08. Third International Conference on},
+  Year                     = {2008},
+  Month                    = {Nov},
+  Pages                    = {502-509},
+  Volume                   = {1},
+  __markedentry            = {[vagner:6]},
+  Abstract                 = {In response to successive accounting frauds such as Enron scandal, corporate accounting transparency has been at issue all over the world. After the United States and many European countries introduced XBRL that has been developed as a tool to improve accounting transparency, XBRL is being used as a standard of financial reporting worldwide. The purpose of this paper is to present how XBRL affects corporate accounting transparency. We investigated the meaning of accounting transparency and indices to measure it. We also presented the factors for measuring accounting information transparency, and established a research model and hypotheses to analyze the relationships among accounting transparency, accounting information transparency and XBRL. Last, we carried out confirmatory factor analysis to verify the research model and analyzed the research hypotheses through LISREL.},
+  DOI                      = {10.1109/ICCIT.2008.221},
+  Keywords                 = {accounts data processing;high level languages;Enron scandal;European countries;LISREL;United States;XBRL;accounting information transparency;accounting transparency;extensible business reporting language;Data mining;Industrial engineering;Information analysis;Information technology;Investments;Marketing and sales;Moon;Standards development;Taxonomy;XML;Accounting Information Transparency;Accounting Transparency;XBRL}
+}
+
+@InProceedings{LiShao2011,
+  Title                    = {Construction of the new network financial reporting model based on the event accounting theory and XBRL},
+  Author                   = {Jiujin Li and Qiang Shao},
+  Booktitle                = {Management Science and Industrial Engineering (MSIE), 2011 International Conference on},
+  Year                     = {2011},
+  Month                    = {Jan},
+  Pages                    = {1070-1073},
+  __markedentry            = {[vagner:6]},
+  Abstract                 = {To construct the new network financial reporting model, the paper discusses the principles and elements of new network financial reporting mode. Based on the event accounting theory and XBRL (e Xtensible Business Reporting Language) database, the paper collects overall data on business transaction, centralizes accounting data formats and standards, precise and dynamic data. The successful construction of new network financial reporting model necessarily passes process: structing two-tier XBRL classification database, developing definable program modules, providing interactive tools and other specific steps and processes.},
+  DOI                      = {10.1109/MSIE.2011.5707601},
+  Keywords                 = {XML;financial data processing;XBRL;accounting theory;data formats;event accounting theory;extensible business reporting language;network financial reporting model;Biological system modeling;Buildings;Business;Data processing;Databases;Software;Standards;XBRL;customization;flexibility;network financial report}
+}
+
+@InProceedings{Mendez-NunezTrivino2010,
+  Title                    = {Combining Semantic Web technologies and Computational Theory of Perceptions for text generation in financial analysis},
+  Author                   = {Mendez-Nunez, S. and Trivino, G.},
+  Booktitle                = {Fuzzy Systems (FUZZ), 2010 IEEE International Conference on},
+  Year                     = {2010},
+  Month                    = {July},
+  Pages                    = {1-8},
+  __markedentry            = {[vagner:6]},
+  Abstract                 = {The development of Internet technologies makes it possible to obtain data in near real time about the financial state of companies. Moreover, tools such as XBRL have been developed to deal with the automatic generation of business reports. However the available tools are not suitable to support the current tendency towards the so called, Continuous Reporting. Here, for a specific purpose, the wealth of available information should be summarized in short reports where the relevant information is remarked while the irrelevant remains hidden. Using a combination of Zadeh's Computational Theory of Perceptions and Semantic Web techniques, we propose a first approach to a computational framework to generate short reports that consist of few but meaningful Natural Language sentences. These sentences are designed to solve the user needs in a specific context of meaning defined with the help of an ontology. A practical demonstration of the computational framework is included.},
+  DOI                      = {10.1109/FUZZY.2010.5583974},
+  ISSN                     = {1098-7584},
+  Keywords                 = {financial data processing;natural language processing;ontologies (artificial intelligence);semantic Web;text analysis;Internet;XBRL;business report;computational theory of perception;continuous reporting;financial analysis;financial state;natural language sentence;ontology;semantic Web;text generation;Companies;Context;OWL;Ontologies;Pragmatics;Resource description framework;Taxonomy}
+}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:todos_fase01\;0\;;
+}
+

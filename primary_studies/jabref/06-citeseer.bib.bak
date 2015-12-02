@@ -1,0 +1,295 @@
+% Encoding: UTF-8
+
+
+@Misc{Allee,
+  Title                    = {The Learning Organization Special Issue on Social Networks and Social Networking Value Creating Networks: Organizational Issues and Challenges},
+  Author                   = {Verna Allee},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{AllesGray2011,
+  Title                    = {A relative cost framework for rethinking assurance of XBRL filings. Working paper},
+  Author                   = {M Alles and G L Gray},
+  Year                     = {2011},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{AllesPiechocki,
+  Title                    = {Framework for Enhancing Governance Decision Making Using Interactive Data},
+  Author                   = {Michael Alles and Maciej Piechocki},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{BediniGardarinNguyen,
+  Title                    = {Semantic Technologies and},
+  Author                   = {Ivan Bedini and Georges Gardarin and Benjamin Nguyen},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{Blankespoor,
+  Title                    = {The Impact of Investor Information Processing Costs on Firm Disclosure Choice: Evidence from the XBRL Mandate},
+  Author                   = {Elizabeth Blankespoor},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{BoritzNo,
+  Title                    = {Computer-Assisted Tools for Auditing XBRL-Related Documents},
+  Author                   = {Efrim Boritz and Won Gyun No},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{BoritzNo2011,
+  Title                    = {Computer-assisted functions for auditing XBRL-related documents Working paper},
+  Author                   = {E Boritz and W G No},
+  Year                     = {2011},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{CentralNigeriaUmeano,
+  Title                    = {Central Business District},
+  Author                   = {Copyright Central and Bank Nigeria and Attn Chidi Umeano},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{CurryHarthO‟Riain,
+  Title                    = {2009) “Challenges ahead for converging financial data”, W3C Workshop on improving access to financial data on the web},
+  Author                   = {Edward Curry and Andreas Harth and Sean O‟Riain},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{DebrecenyFeldenBergakademieEtAl,
+  Title                    = {d'Eri Alessandro2 International Accounting Standards Board},
+  Author                   = {Roger Debreceny and Carsten Felden and Technische Universität Bergakademie and Stephanie Farewell and Maciej Piechocki and Ifrs Foundation},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{Director,
+  Title                    = {Notice to Recipients of This Exposure Draft of a Proposed Accounting Standards Update},
+  Author                   = {Technical Director},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{DrakeRoulstoneThornock,
+  Title                    = {The Demand for Mandatory Disclosure: Evidence from Investors ’ Use of the EDGAR Database},
+  Author                   = {Michael S. Drake and Darren T. Roulstone and Jacob R. Thornock},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{DrakeRoulstoneThornocka,
+  Title                    = {The Demand for Mandatory Disclosure: Evidence from Investors ’ Use of the EDGAR Database},
+  Author                   = {Michael S. Drake and Darren T. Roulstone and Jacob R. Thornock},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{EdgarManualStatesEtAl,
+  Title                    = {EDGAR Company Database},
+  Author                   = {Use Edgar and Filer Manual and United States and Edgarlink},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{EdgarManualStatesEtAla,
+  Title                    = {EDGAR Company Database},
+  Author                   = {Use Edgar and Filer Manual and United States and Edgarlink},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{EspanaKpmgJustsystemsEtAl,
+  Title                    = {Contributors- Best Practices Board Members and Staff:},
+  Author                   = {Ignacio Boixo Banco De España and Lars Dyrner Kpmg and Diane Mueller Justsystems and Yossef Newman Deloitte and Mike Willis Pricewaterhousecoopers},
+  __markedentry            = {[vagner:6]}
+}
+
+@TechReport{Hogan2011,
+  Title                    = {Exploiting RDFS and OWL for Integrating Heterogeneous, Large-Scale, Linked Data Corpora},
+  Author                   = {Aidan Hogan},
+  Year                     = {2011},
+  __markedentry            = {[vagner:6]}
+}
+
+@Article{JannerLampathakiHoyerEtAl2008,
+  Title                    = {A core component-based modelling approach for achieving e-business semantics interoperability},
+  Author                   = {T Janner and F Lampathaki and V Hoyer and S Mouzakitis and Y Charalabidis and C Schroth},
+  Journal                  = {Journal of Theoretical and Applied Electronic Commerce Research},
+  Year                     = {2008},
+  Number                   = {3},
+  Pages                    = {1--16},
+  __markedentry            = {[vagner:6]}
+}
+
+@Article{JannerLampathakiHoyerEtAl2008a,
+  Title                    = {A core component-based modelling approach for achieving e-business semantics interoperability},
+  Author                   = {T Janner and F Lampathaki and V Hoyer and S Mouzakitis and Y Charalabidis and C Schroth},
+  Journal                  = {Journal of Theoretical and Applied Electronic Commerce Research},
+  Year                     = {2008},
+  Number                   = {3},
+  Pages                    = {1--16},
+  __markedentry            = {[vagner:6]}
+}
+
+@InProceedings{KriegerKieferDeclerck2008,
+  Title                    = {A framework for temporal representation and reasoning in business intelligence applications},
+  Author                   = {H-U Krieger and B Kiefer and T Declerck},
+  Booktitle                = {In AAAI 2008 Spring Symposium on AI Meets Business Rules and Process Management},
+  Year                     = {2008},
+  Pages                    = {59--70},
+  Publisher                = {AAAI},
+  __markedentry            = {[vagner:6]}
+}
+
+@InProceedings{KriegerKieferDeclerck2008a,
+  Title                    = {A framework for temporal representation and reasoning in business intelligence applications},
+  Author                   = {H-U Krieger and B Kiefer and T Declerck},
+  Booktitle                = {In AAAI 2008 Spring Symposium on AI Meets Business Rules and Process Management},
+  Year                     = {2008},
+  Pages                    = {59--70},
+  Publisher                = {AAAI},
+  __markedentry            = {[vagner:6]}
+}
+
+@InProceedings{LeenheerDebruynePeeters2009,
+  Title                    = {Towards social performance indicators for community-based ontology evolution},
+  Author                   = {P De Leenheer and C Debruyne and J Peeters},
+  Booktitle                = {In: Workshop on Collaborative Construction, Management and Linking of Structured Knowledge at the International Semantic Web Conference},
+  Year                     = {2009},
+  __markedentry            = {[vagner:6]}
+}
+
+@InProceedings{LeenheerDebruynePeeters2009a,
+  Title                    = {Towards social performance indicators for community-based ontology evolution},
+  Author                   = {P De Leenheer and C Debruyne and J Peeters},
+  Booktitle                = {In: Workshop on Collaborative Construction, Management and Linking of Structured Knowledge at the International Semantic Web Conference},
+  Year                     = {2009},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{LockeLymerLoweEtAl,
+  Title                    = {ANALYSIS OF INTERACTIVE DATA FROM THE PERSPECTIVE OF NON-PROFESSIONAL INVESTORS},
+  Author                   = {Joanne Locke and Andrew Lymer and Alan Lowe and Gillian Knight and Joanne Locke and Andrew Lymer and Alan Lowe},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{MitraBanerjeeYu,
+  Title                    = {Automated Analysis of News to Compute Market Sentiment: Its Impact on Liquidity and Trading Review Authors:},
+  Author                   = {Gautam Mitra and Ashok Banerjee and Xiang Yu},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{MylesBusinessUniversity,
+  Title                    = {Doctorate of Business Administration (Information Systems)},
+  Author                   = {John F Myles and Faculty Of Business and Edith Cowan University},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{MylesBusinessUniversitya,
+  Title                    = {Doctorate of Business Administration (Information Systems)},
+  Author                   = {John F Myles and Faculty Of Business and Edith Cowan University},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{NovakouskiLewis,
+  Title                    = {Interoperability in the e-Government Context},
+  Author                   = {Marc Novakouski and Grace A. Lewis},
+  __markedentry            = {[vagner:6]}
+}
+
+@InProceedings{O’RiainHarthCurry2012,
+  Title                    = {E.: Linked Data Driven Information Systems as an Enabler for Integrating Financial Data},
+  Author                   = {S O’Riain and A Harth and Curry},
+  Booktitle                = {In: Information Systems for Global Financial Markets: Emerging Developments and Effects. IGI Global},
+  Year                     = {2012},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{Teller,
+  Title                    = {THE USE OF A FORMAL REPRESENTATION OF ACCOUNTING STANDARDS},
+  Author                   = {Pierre Teller},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{UmbrichHausenblasArcherEtAl,
+  Title                    = {Discovering Resources on the Web—A Comparison of Discovery Mechanism for the Web of Data and the Web of Documents},
+  Author                   = {Jürgen Umbrich and Michael Hausenblas and Phil Archer and Eran Hammer-lahav and Erik Wilde and Lower Dangan and Jürgen Umbrich and Michael Hausenblas and Phil Archer and Eran Hammer-lahav and Erik Wilde},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{UmbrichHausenblasArcherEtAla,
+  Title                    = {Discovering Resources on the Web—A Comparison of Discovery Mechanism for the Web of Data and the Web of Documents},
+  Author                   = {Jürgen Umbrich and Michael Hausenblas and Phil Archer and Eran Hammer-lahav and Erik Wilde and Lower Dangan and Jürgen Umbrich and Michael Hausenblas and Phil Archer and Eran Hammer-lahav and Erik Wilde},
+  __markedentry            = {[vagner:6]}
+}
+
+@TechReport{WildeKansaYee2009,
+  Title                    = {Web Services for Recovery.gov},
+  Author                   = {Erik Wilde and Eric Kansa and Raymond Yee},
+  Year                     = {2009},
+  __markedentry            = {[vagner:6]}
+}
+
+@TechReport{YeeKansaWilde2010,
+  Title                    = {E.: Improving Federal Spending Transparency: Lessons Drawn from Recovery.gov},
+  Author                   = {R Yee and E C Kansa and Wilde},
+  Year                     = {2010},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{Yu,
+  Title                    = {Designing Software to Shape Open Government Policy},
+  Author                   = {Harlan Ming-tun Yu},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{Yua,
+  Title                    = {Designing Software to Shape Open Government Policy},
+  Author                   = {Harlan Ming-tun Yu},
+  __markedentry            = {[vagner:6]}
+}
+
+@TechReport{Zhang2008,
+  Title                    = {Evaluations on XML Standards for Actual Applications},
+  Author                   = {J Zhang},
+  Year                     = {2008},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{ZhengLiMadnickEtAl,
+  Title                    = {SPARQL Query Mediation for Data Integration},
+  Author                   = {Xiaoqing Zheng and Xitong Li and Stuart Madnick and Xiaoqing Zheng and Xitong Li and Stuart E. Madnick},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{ZhuMadnickLeeEtAl,
+  Title                    = {Data and Information Quality Research: Its Evolution and Future},
+  Author                   = {Hongwei Zhu and Stuart Madnick and Yang Lee and Richard Wang and Hongwei Zhu and Yang W. Lee},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{,
+  Title                    = {Broad Based Business Reporting Supplementary paper Business},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{,
+  Title                    = {Broad Based Business Reporting Supplementary paper Business},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{,
+  Title                    = {Century Business Reporting System},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{,
+  Title                    = {Information for Better Markets DEVELOPMENTS IN NEW REPORTING MODELSInformation for Better Markets An initiative from the ICAEW Financial Reporting Faculty},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{,
+  Title                    = {Information for Better Markets DEVELOPMENTS IN NEW REPORTING MODELSInformation for Better Markets An initiative from the ICAEW Financial Reporting Faculty},
+  __markedentry            = {[vagner:6]}
+}
+
+@Misc{,
+  Title                    = {Information for Better Markets DEVELOPMENTS IN NEW REPORTING MODELSInformation for Better Markets An initiative from the ICAEW Financial Reporting Faculty},
+  __markedentry            = {[vagner:6]}
+}
+

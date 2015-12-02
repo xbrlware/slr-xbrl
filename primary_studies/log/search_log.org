@@ -34,8 +34,13 @@
    - text:(XBRL AND Business Report AND tool) AND year:[2008 TO 2015]
 * Wiley Online Library
 * Scopus Elsevier
+  - XBRL AND Business Report AND tool
+  - Possibilitade de exportar
 * EL Compendex
+  - XBRL AND Business Report AND tool
+  - Total de artigos 100
 * Google scholar
+  - XBRL AND Business Report AND tool
 * INSPEC
 
 

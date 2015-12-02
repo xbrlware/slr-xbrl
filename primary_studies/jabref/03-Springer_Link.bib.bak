@@ -1,0 +1,100 @@
+% Encoding: UTF-8
+
+
+@Article{Felden2011,
+  Title                    = {Characteristics of XBRL adoption in Germany},
+  Author                   = {Felden, Carsten},
+  Journal                  = {Journal of Management Control},
+  Year                     = {2011},
+  Number                   = {2},
+  Pages                    = {161-186},
+  Volume                   = {22},
+  __markedentry            = {[vagner:6]},
+  DOI                      = {10.1007/s00187-011-0134-7},
+  ISSN                     = {2191-4761},
+  Keywords                 = {XBRL; Adoption; TAM; Institutional theory},
+  Language                 = {English},
+  Publisher                = {Springer-Verlag},
+  URL                      = {http://dx.doi.org/10.1007/s00187-011-0134-7}
+}
+
+@InCollection{GarciaGil2010,
+  Title                    = {Linking XBRL Financial Data},
+  Author                   = {García, Roberto and Gil, Rosa},
+  Booktitle                = {Linking Enterprise Data},
+  Publisher                = {Springer US},
+  Year                     = {2010},
+  Editor                   = {Wood, David},
+  Pages                    = {103-125},
+  DOI                      = {10.1007/978-1-4419-7665-9_6},
+  ISBN                     = {978-1-4419-7664-2},
+  Language                 = {English},
+  URL                      = {http://dx.doi.org/10.1007/978-1-4419-7665-9_6}
+}
+
+@InCollection{LaraCantadorCastells2008,
+  Title                    = {Semantic Web Technologies For The Financial Domain},
+  Author                   = {Lara, Rubén and Cantador, Iván and Castells, Pablo},
+  Booktitle                = {The Semantic Web},
+  Publisher                = {Springer US},
+  Year                     = {2008},
+  Editor                   = {Cardoso, Jorge and Hepp, Martin and Lytras, MiltiadisD.},
+  Pages                    = {41-74},
+  Series                   = {Semantic Web And Beyond Computing for Human Experience},
+  Volume                   = {6},
+  DOI                      = {10.1007/978-0-387-48531-7_3},
+  ISBN                     = {978-0-387-48530-0},
+  Language                 = {English},
+  URL                      = {http://dx.doi.org/10.1007/978-0-387-48531-7_3}
+}
+
+@InCollection{LeeGotoHuEtAl2014,
+  Title                    = {Exploiting Linked Data in Financial Engineering},
+  Author                   = {Lee, Vivian and Goto, Masatomo and Hu, Bo and Naseer, Aisha and Vandenbussche, Pierre-Yves and Shakair, Gofran and Rodrigues, EduardaMendes},
+  Booktitle                = {Service Science and Knowledge Innovation},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2014},
+  Editor                   = {Liu, Kecheng and Gulliver, StephenR. and Li, Weizi and Yu, Changrui},
+  Pages                    = {116-125},
+  Series                   = {IFIP Advances in Information and Communication Technology},
+  Volume                   = {426},
+  DOI                      = {10.1007/978-3-642-55355-4_12},
+  ISBN                     = {978-3-642-55354-7},
+  Keywords                 = {Financial Engineering; Financial Reporting; XBRL (eXtensible Business Reporting Language); Governmental Data; Linked Data; Data driven platform},
+  Language                 = {English},
+  URL                      = {http://dx.doi.org/10.1007/978-3-642-55355-4_12}
+}
+
+@InCollection{Mueller-WickopSchultzNuettgens2013,
+  Title                    = {XBRL: Impacts, Issues and Future Research Directions},
+  Author                   = {Müller-Wickop, Niels and Schultz, Martin and Nüttgens, Markus},
+  Booktitle                = {Enterprise Applications and Services in the Finance Industry},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2013},
+  Editor                   = {Rabhi, FethiA. and Gomber, Peter},
+  Pages                    = {112-130},
+  Series                   = {Lecture Notes in Business Information Processing},
+  Volume                   = {135},
+  DOI                      = {10.1007/978-3-642-36219-4_7},
+  ISBN                     = {978-3-642-36218-7},
+  Keywords                 = {XBRL; Literature Review; Research Agenda},
+  Language                 = {English},
+  URL                      = {http://dx.doi.org/10.1007/978-3-642-36219-4_7}
+}
+
+@InCollection{ThomasWuMaEtAl2014,
+  Title                    = {Semantically Assisted XBRL-Taxonomy Alignment Across Languages},
+  Author                   = {Thomas, SusanMarie and Wu, Xichuan and Ma, Yue and O’Riain, Sean},
+  Booktitle                = {Towards the Multilingual Semantic Web},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2014},
+  Editor                   = {Buitelaar, Paul and Cimiano, Philipp},
+  Pages                    = {277-293},
+  __markedentry            = {[vagner:]},
+  DOI                      = {10.1007/978-3-662-43585-4_17},
+  ISBN                     = {978-3-662-43584-7},
+  Keywords                 = {Financial reporting; Multilingual; Protégé OWL; XBRL},
+  Language                 = {English},
+  URL                      = {http://dx.doi.org/10.1007/978-3-662-43585-4_17}
+}
+

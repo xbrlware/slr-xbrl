@@ -1,0 +1,18 @@
+﻿SELECT identifier, type, address, assignee, annote, author, booktitle, 
+       chapter, day, dayfiled, edition, editor, howpublish, institution, 
+       journal, language, month, monthfiled, nationality, note, "number", 
+       organization, pages, publisher, revision, school, series, title, 
+       reptype, volume, year, yearfiled, url, custom1, custom2, custom3, 
+       custom4, custom5, isbn
+  FROM primary_studies
+  where UPPER(title) LIKE '%XBRL%' OR 
+      UPPER(title) LIKE '%TOOL%' OR
+      UPPER(title) LIKE '%BUSINNESS REPORT%';
+
+SELECT COUNT(1)
+FROM public.primary_studies
+where UPPER(title) LIKE '%XBRL%' OR 
+      UPPER(title) LIKE '%TOOL%' OR
+      UPPER(title) LIKE '%BUSINNESS REPORT%'
+      
+
