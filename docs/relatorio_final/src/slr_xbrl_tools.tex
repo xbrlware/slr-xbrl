@@ -252,7 +252,7 @@ escopo deste texto. Todavia, para os casos em que o \textit{JabRef} não
 consegui determinar se dois documentos são duplicados, a ferramenta solicita a
 supervisão do usuário. Posteriormente todos os onze bancos de dados criados no
 passo anterior foram mesclados em um único para o qual foi solicitada a remoção
-de duplicatas. Aproveitando que a ferramenta \textit{JabRef} indentifica o tipo
+de duplicatas. Aproveitando que a ferramenta \textit{JabRef} identifica o tipo
 de publicação do trabalho foram removidos os estudo identificados como livros.
 Desta forma, ao final este processo o número de \textit{382} trabalhos.
 
@@ -267,33 +267,100 @@ deste processo de escolha ser realizado aos pares, este procedimento não foi
 adotado tendo em vista a impossibilidade de outro pesquisador ou especialista
 com a possibilidade de realizar tal tarefa. Ao final deste quatros passos
 restaram um total de para serem avaliados segundo os critérios de qualidade
-dispostos na Subseção \ref{subsec:analise-qualidade}. A Figura \ref{fig:fases}
-exibe o número de trabalhos existentes em cada fase de seleção da Revisão.
+dispostos na Subseção \ref{subsec:analise-qualidade}.
 
+\subsection{Análise de Qualidade}
+\label{subsec:analise-qualidade}
+Não há como desvincular a qualidade de uma SLR da qualidade dos estudos que a
+compõe. Neste sentindo se faz necessário a definição de regras claras de
+qualidade a fim de removermos trabalhos que possam causar ameaças aos
+resultados da Revisão Sistemática. Para esta Revisão foram utilizados os
+seguintes critérios de avaliação da qualidade:
+
+\begin{itemize}
+\item Existe uma clara definição do estudo?
+\item Existe avaliação da ferramenta proposta bem como discussão dos resultados?
+\item O estudo é capaz de responder de forma clara pelo menos 50\% das questões
+  de pesquisa?
+\end{itemize}
+
+Cada um dos trabalhos escolhidos na etapa de seleção anterior foram validados
+no crivo de qualidade proposto. Nesta etapa outros \textbf{QUANTOS}
+trabalhos foram o excluídos e apenas \textbf{QUANTOS} estudos são permaneceram
+para serem utilizados no processo de extração e sintetização dos dados. Findada
+a fase de seleção dos estudos podemos visualizar na  Figura \ref{fig:fases}
+o número de trabalhos existentes em cada fase de seleção da Revisão.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=.75\textwidth]{../img/graph_fases.eps}
-\caption{Total de artigos em cada fase da SRL}
+\caption{Total de artigos em cada fase da SLR}
 \label{fig:fases}
 \end{figure}
-
-\subsection{Análise de Qualidade}
-\label{subsec:analise-qualidade}
-
 
 
 \subsection{Extração dos Dados}
 \label{subsec:extracao}
 
+Do total de \textbf{QUANTOS} estudos que foram aprovados pelo processo de
+avaliação da qualidade coletou-se dados com base no formulário cujos campos
+estão exibidos na Tabela \ref{tab:campos-form}. A extração de dados do estudos
+mediante um formulário possibilita o armazenamento das informações para fins de
+processamento posterior bem como identificar como cada estudo responde a
+determinada questão de pesquisa. Como alguns campos do formulário tem caráter
+subjetivo, o campo ``Objetivo do Estudo'' por exemplo, o ideal que as respostas
+de cada formulário fosse validade em pares. Todavia, por não haver profissional
+para tal atividade este tipo de revisão não foi executada.
+
+
+\begin{table}[ht]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{\#} & \multicolumn{1}{c|}{\textbf{Atributo}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                      \\ \hline
+01          & Identificador do Estudo                & ID único para cada estudo, por exemplo IE01                                                  \\ \hline
+02          & Data de Extração                       & Data no qual a extração foi conduzida (DD/MM/YYYY)                                           \\ \hline
+03          & Nome do Extrator                       & Nome da pessoa responsável pela extração                                                     \\ \hline
+04          & Autor                                  & Autor do estudo                                                                              \\ \hline
+05          & Ano                                    & Ano de publicação do estudo                                                                  \\ \hline
+06          & Título                                 & Título do Estudo                                                                             \\ \hline
+07          & Tipo de Publicação                     & Artigo de journal ou conferência, dissertação, tese ou whitepaper                            \\ \hline
+08          & Objetivo do Estudo                     & Quais foram os objetivos do estudo?                                                          \\ \hline
+09          & Metodologia do Estudo                  & Quais foram as metodologias utilizadas no estudo?                                            \\ \hline
+10          & Descobertas e Resultados               & Quais foram os resultados e descobertas do estudo                                            \\ \hline
+11          & Nome da Ferramenta                     & Nome da ferramenta                                                                           \\ \hline
+12          & Desenvolvedor                          & Pessoa ou empresa responsável pelo desenvolvimento                                           \\ \hline
+13          & URL                                    & Site da internet da ferramenta                                                               \\ \hline
+14          & Objetivo da Ferramenta                 & Qual funcionalidade principal da ferramenta                                                  \\ \hline
+15          & Tipo de Arquitetura da Ferramenta      & Cliente/Servidor ou Web ou desktop                                                           \\ \hline
+16          & Tipo de Licença da Ferramenta          & Software livre ou proprietário                                                               \\ \hline
+17          & Avaliação da Ferramenta                & Como a ferramenta foi avaliada                                                               \\ \hline
+18          & Estudo de Casos                        & Existe algum estudo de caso ou aplicação real da ferramenta                                  \\ \hline
+19          & Ramo de Atuação                          & Qual setor da economia (governos, medicina, setor financeiro) a ferramenta já foi utilizada? \\ \hline
+\end{tabular}
+}
+\caption{Campos do formulário de extração de dados}
+\label{tab:campos-form}
+\end{table}
+
+
+
 \subsection{Sintetização dos Dados}
 \label{subsec:sintetizacao}
-
+Nesta etapa do processo foi realizada a coleta, combinação e sintetização dos
+dados extraídos de cada estudo  para as etapas finais da revisão sistemática da
+literatura. Neste momento o foco é na classificação e sumarização das
+informações com o objetivo de responder as questões de pesquisa. Foi utilizado
+técnicas de \textit{Estatística Descritiva} \cite{wohlin2012experimentation} com o objetivo de descrever
+apresentar graficamente aspectos interessante do dataset coletado.
 \section{Resultados}
 \label{subsec:resultados}
+
 \section{Limitações e Ameaças a Validade}
 \label{sec:limitacoes}
 
+\section{Conclusões}
+\label{sec:conclusao}
 
 \bibliographystyle{sbc}
 \bibliography{../bib/slr_xbrl_tools}

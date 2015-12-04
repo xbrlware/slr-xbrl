@@ -33,12 +33,14 @@
     "tab:base-dados"
     "tab:dicionario"
     "subsec:decisao-inclusao"
-    "fig:fases"
     "subsec:analise-qualidade"
+    "fig:fases"
     "subsec:extracao"
+    "tab:campos-form"
     "subsec:sintetizacao"
     "subsec:resultados"
-    "sec:limitacoes")
+    "sec:limitacoes"
+    "sec:conclusao")
    (LaTeX-add-bibliographies
     "../bib/slr_xbrl_tools")))
 
