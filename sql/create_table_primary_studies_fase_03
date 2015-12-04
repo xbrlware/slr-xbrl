@@ -1,0 +1,7 @@
+﻿CREATE TABLE public.primary_studies_fase_03 (
+
+title	VARCHAR(3000),
+Abstract TEXT,
+Aceito   CHAR(1)
+
+);

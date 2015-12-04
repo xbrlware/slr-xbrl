@@ -1,0 +1,14 @@
+﻿
+CREATE OR REPLACE VIEW public.vw_fase_03_escolhe_titulo AS(
+ SELECT title, identifier, type, address, assignee, annote, author, booktitle, 
+       chapter, day, dayfiled, edition, editor, howpublish, institution, 
+       journal, language, month, monthfiled, nationality, note, "number", 
+       organization, pages, publisher, revision, school, series,
+       reptype, volume, year, yearfiled, url, custom1, custom2, custom3, 
+       custom4, custom5, isbn
+  FROM primary_studies
+  WHERE (UPPER(title) LIKE '%IFRS Disclosure%'
+  OR UPPER(title) LIKE '%TOOL%'
+ OR  UPPER(title) LIKE '%REPORT%')
+ and type <> '5'
+ );
