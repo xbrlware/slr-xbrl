@@ -40,6 +40,13 @@ Revisão Sistemática da Literatura}
 %\end{abstract}
 
 \begin{resumo}
+ A XBRL (\textit{eXtensible Business Report Language})
+é uma linguagem para divulgação e intercâmbio de informações financeiras
+baseada em XML. Devido a sua crescente adoção no mundo, especialmente pelas
+entidades públicas, existe a necessidade da aquisição ou desenvolvimento de
+ferramentas que deem suporte à XBRL. Visando ajudar nesta tomada de decisão foi
+realizada uma Revisão Sistemática da Literatura com objetivo de levantar as
+ferramentas para Business Report que dão suporte à XBRL.
 \end{resumo}
 
 
@@ -52,9 +59,15 @@ metodologia científica cujo objetivo é identificar, avaliar e interpretar
 pesquisa, área ou fenômeno de
 interesse\cite{keele2007guidelines,wohlin2012experimentation}. Por se tratar de uma metodologia científica deve estar amparada por um processo conciso para a sua correta execução. Neste sentido, trabalhos que descrevem boas práticas na condução de uma SLR salientam a necessidade da definição de um protocolo durante a fase de planejamento de uma Revisão \cite{keele2007guidelines, biolchini2005systematic}.
 
-Neste contexto, o presente documento tem por objetivo propor um conjunto de diretrizes a serem seguidas durante a condução de uma Revisão Sistemática da literatura sobre o tema \textit{ferramentas para Relatórios de Negócio com suporte à linguagem XBRL}. \textit{Relatórios  de Negócio (Business Report)} é o produto final do  processo de divulgação pública de dados operacionais e financeiras de uma organização ou ainda a prestação regular de informações para os gestores dentro de uma empresa visado apoiá-los no processo de tomada de decisão.
-\cite{lymer1999business}. Há uma terceira via da área de  Relatórios de Negócio está relacionada ao processo de prestação de contas por entes públicos aos governos nacionais. A XBRL (\textit{eXtensible Relatórios de Negócio Language}) é uma linguagem para divulgação e intercâmbio de informações financeiras baseada em XML\cite{xbrl_conceitos_aplicacoes}. O padrão vem sendo adotado por diversas instituições e empresas em todo mundo com o suporte de um consórcio global\footnote{\url{www.xbrl.org}} com mais de 650 membros que incentivam a criação de jurisdições locais. Atualmente o consórcio conta com 24 jurisdições, sendo que em países como  Estados Unidos, Grã-Bretanha e Austrália, a XBRL já é a linguagem oficial para entrega
-de relatórios à órgãos de governo. A Figura \ref{fig:world_map} exibe os países que estão promovendo a adoção da XBRL. Estes países estão com a coloração mais escura no mapa.
+Neste contexto, o presente documento tem por objetivo propor uma Revisão
+Sistemática da literatura sobre o tema \textit{ferramentas para Business Report com suporte à linguagem XBRL}. \textit{Relatórios  de Negócio (Business Report)} é o produto final do  processo de divulgação pública de dados operacionais e financeiras de uma organização ou ainda a prestação regular de informações para os gestores dentro de uma empresa visado apoiá-los no processo de tomada de decisão.
+\cite{lymer1999business}. Há uma terceira via da área de  Relatórios de Negócio
+está relacionada ao processo de prestação de contas por entes públicos aos
+governos nacionais. A XBRL (\textit{eXtensible Business Report Language})
+é uma linguagem para divulgação e intercâmbio de informações financeiras
+baseada em XML \cite{xbrl_conceitos_aplicacoes}. O padrão vem sendo adotado por diversas instituições e empresas em todo mundo com o suporte de um consórcio global\footnote{\url{www.xbrl.org}} com mais de 650 membros que incentivam a criação de jurisdições locais. Atualmente o consórcio conta com 24 jurisdições, sendo que em países como  Estados Unidos, Grã-Bretanha e Austrália, a XBRL já é a linguagem oficial para entrega
+de relatórios à órgãos de governo. A Figura \ref{fig:world_map} exibe os países
+que estão aderindo à XBRL. Estes países estão com a coloração mais escura no mapa.
 
 \begin{figure}[htb]
 \centering
@@ -72,8 +85,7 @@ padrão para o envio de relatórios de prestação de contas pelos entes
 federativos (estados e municípios) por meio do SICONFI – Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro \cite{nt_03_2013}, surge a necessidade por parte
 daquelas organizações do \textit{desenvolvimento ou aquisição} de sistemas de
 informação capazes de criar, processar e enviar informações no formato
-XBRL. Um cenário onde tal situação ocorre tal necessidade é latente é em
-prefeituras de cidades de pequeno e médio porte que necessitam prestar contas
+XBRL. Um cenário onde tal necessidade ocorre é no caso de prefeituras de cidades de pequeno e médio porte que necessitam prestar contas
 via \textit{XBRL}, contudo, não possuem conhecimento ou tempo necessário para desenvolver alguma ferramenta que suporte a linguagem.
 
 Neste sentido, verifica-se que existe a demanda por parte das organizações, especialmente as entidades públicas, de referências de qualidade sobre o assunto de \textit{XBRL}. Neste contexto, entende-se que uma Revisão Sistemática da Literatura - SLR  que avaliasse as ferramentas para Business Report que dão suporte ao XBRL pode \textit{subsidiar a tomada de decisão} por parte dos gestores públicos sobre a aquisição de tais ferramentas. Além disso, um trabalho neste sentido poderia subsidiar o desenvolvimento de novas ferramentas que venham preencher as eventuais lacunas existentes nos sistemas atuais. Ademais, traz o foco da comunidade científica sobre um assunto que vêm crescendo bastante nos últimos anos, dentre outros motivos, devido à necessidade das organizações públicas ou privadas de serem cada vez mais transparentes.
@@ -122,7 +134,7 @@ esta revisão são propostas as seguintes questões de pesquisa:
 
   \item \textbf{$Q1$}: Quais são as ferramentas para Relatórios de Negócio que
     suportam a XBRL?
-  \item \textbf{$Q2$}: Quais são os atributos comuns as ferramentas
+  \item \textbf{$Q2$}: Quais são as funcionalidades comuns as ferramentas
     que possibilitem a comparação entre elas?
   \item \textbf{$Q3$}: Existem casos reais de utilização da ferramenta
     (Estudos de Casos, Whitepapers e etc)?
@@ -285,9 +297,12 @@ seguintes critérios de avaliação da qualidade:
 \end{itemize}
 
 Cada um dos trabalhos escolhidos na etapa de seleção anterior foram validados
-no crivo de qualidade proposto. Nesta etapa outros \textbf{QUANTOS}
-trabalhos foram o excluídos e apenas \textbf{QUANTOS} estudos são permaneceram
-para serem utilizados no processo de extração e sintetização dos dados. Findada
+no crivo de qualidade proposto. Nesta etapa outros 30
+trabalhos foram o excluídos e apenas 29 estudos são permaneceram
+para serem utilizados no processo de extração e sintetização dos dados. Na
+realidade alguns artigos foram aprovados após a leitura do seu resumo, contudo,
+não foi possível acesso ao texto completo dos mesmo que só permitiam acesso
+após a compra do mesmo. Findada
 a fase de seleção dos estudos podemos visualizar na  Figura \ref{fig:fases}
 o número de trabalhos existentes em cada fase de seleção da Revisão.
 
@@ -302,7 +317,7 @@ o número de trabalhos existentes em cada fase de seleção da Revisão.
 \subsection{Extração dos Dados}
 \label{subsec:extracao}
 
-Do total de \textbf{QUANTOS} estudos que foram aprovados pelo processo de
+Do total de 29 estudos que foram aprovados pelo processo de
 avaliação da qualidade coletou-se dados com base no formulário cujos campos
 estão exibidos na Tabela \ref{tab:campos-form}. A extração de dados do estudos
 mediante um formulário possibilita o armazenamento das informações para fins de
@@ -351,16 +366,160 @@ Nesta etapa do processo foi realizada a coleta, combinação e sintetização do
 dados extraídos de cada estudo  para as etapas finais da revisão sistemática da
 literatura. Neste momento o foco é na classificação e sumarização das
 informações com o objetivo de responder as questões de pesquisa. Foi utilizado
-técnicas de \textit{Estatística Descritiva} \cite{wohlin2012experimentation} com o objetivo de descrever
-apresentar graficamente aspectos interessante do dataset coletado.
+técnicas de \textit{Estatística Descritiva} \cite{wohlin2012experimentation}
+com o objetivo de descrever e apresentar graficamente aspectos interessante do dataset coletado.
 \section{Resultados}
 \label{subsec:resultados}
+Nesta seção discute-se os resultados desta Revisão Sistema tomando como base
+cada cada uma das questões de pesquisa propostas. A partir dos 29 estudos que
+chegaram à última etapa da Revisão foi possível responder algumas das questões
+de pesquisa forma completa e outras de maneira parcial.
 
-\section{Limitações e Ameaças a Validade}
-\label{sec:limitacoes}
+A primeira questão proposta foi \textit{$Q1$: Quais são as ferramentas para
+  Relatórios de Negócio que suportam a XBRL?}. Esta questão teve como premissa
+que possivelmente existiria um pequeno número ferramentas que dariam suporte à
+XBRL. Esta expectativa se confirmou conforme pode ser observado pela Tabela \ref{tab:ferramentas}
+. Ao final desta SLR consegui-se mapear um total de 29 ferramentas com suporte à
+XBRL. Conforme pode ser observado na Tabela \ref{tab:ferramentas} a grande
+parte dos sistemas catalogados (26) são proprietários. Apenas um deles é
+declarado como software livre (\textit{Arele}) e outros dois são propostos por
+artigos de conferência e não há menção quando ao tipo de licença do
+trabalho. No tocante à arquitetura a que foi predominante foi
+\textit{Cliente/Servidor} correspondendo a um total de 09 ferramentas, seguido
+pelos \textit{Framework} com um total de 05 ferramentas.
 
-\section{Conclusões}
+
+\begin{table}[htb]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Nome da Ferramenta}} & \multicolumn{1}{c|}{\textbf{Desenvolvedor}} & \multicolumn{1}{c|}{\textbf{Arquitetura}} & \multicolumn{1}{c|}{\textbf{Licença}} \\ \hline
+Abax XBRL                                         & 2H Software                                 & Framework                                 & Paga                                  \\ \hline
+ADDACTIS Pillar3                                  & ADDACTIS                                    & Cliente/Servidor                          & Pago                                  \\ \hline
+AGUILONIUS FactsConverter                         & Aguilonius                                  & Plugin Excel                              & Pago                                  \\ \hline
+AGUILONIUS XBRL FACTORY SE                        & Aguilonius                                  & Cliente/Servidor                          & Paga                                  \\ \hline
+AMANA SmartNotes                                  & AMANA SmartNotes                            & Desktop                                   & Paga                                  \\ \hline
+Arele                                             & XBRL community                              & Framework                                 & Código Aberto                         \\ \hline
+Batavia XBRL                                      & Batavia XBRL BV                             & Framework                                 & Paga.                                 \\ \hline
+Calcbench                                         & Calcbench                                   & Web application                           & Paga                                  \\ \hline
+DataTracks                                        & DataTracks                                  & Cliente/Servidor                          & Paga                                  \\ \hline
+FinDynamics                                       & FinDynamics                                 & Excel Plugin                              & Paga                                  \\ \hline
+FUJITSU Software Interstage XWand                 & Fujitsu                                     & Framework                                 & Paga                                  \\ \hline
+Invoke e-Filing for Banks                         & Invoke                                      & Web Application                           & Paga                                  \\ \hline
+IRIS Carbon                                       & IRIS Business Services Limited              & Cloud                                     & Paga                                  \\ \hline
+Litix                                             & BR-AG                                       & Mobile                                    & Paga                                  \\ \hline
+Oracle Hyperion Disclosure Management             & ORACLE                                      & Cliente/Servidor                          & Paga                                  \\ \hline
+ParsePort XBRL Converter                          & ParsePort                                   & Web application                           & Paga                                  \\ \hline
+ParsePort                                         & AltaNova                                    & Cliente/Servidor                          & Paga                                  \\ \hline
+RegulatorWorks                                    & XBRLWorks                                   & Cliente/Servidor                          & Paga                                  \\ \hline
+Reporting Standard XBRL                           & Reporting Standard                          & Desktop                                   & Paga                                  \\ \hline
+Seahorse                                          & CoreFiling                                  & Cliente/Servidor                          & Paga                                  \\ \hline
+Wdesk                                             & Workiva                                     & Web Application                           & Paga                                  \\ \hline
+XBRL Processing Engine (XPE)                      & UBPartner                                   & Framework                                 & Paga                                  \\ \hline
+xbrlOne Data Editor                               & Semansys Technologies                       & Desktop                                   & Paga                                  \\ \hline
+XKUBED                                            & IPHIX                                       & Cliente/Servidor                          & Paga                                  \\ \hline
+Yeti                                              & CoreFiling                                  & Web application                           & Paga                                  \\ \hline
+XBRL Database Cluster                             & Argyris Argyrou , Andriy Andreev            & Cliente/Servidor                          & N/A                                   \\ \hline
+XBRL Audit Assistant                              & Efrim Boritz \& Won Gyun No                 & Desktop                                   & N/A                                   \\ \hline
+\end{tabular}
+}
+\caption{Ferramentas com Suporto à XBRL}
+\label{tab:ferramentas}
+\end{table}
+
+A segunda questão foi \textit{$Q2$: Quais são as funcionalidades comuns as ferramentas
+    que possibilitem a comparação entre elas?} no qual gostaria de se verificar
+  quais as funcionalidades são mais frequentes nas ferramentas possibilitam
+  desta forma verificar quais atividades relativas à XBRL estão implementadas
+  nas ferramentas. O fato de conhecer as funcionalidades permite a definição de
+  critérios de seleção entre as ferramentas. A figura \ref{fig:funcionalidades}
+  a frequência de ocorrência de algumas funcionalidades nas ferramentas
+  recuperadas. É possível verificar que as funcionalidades de \textit{criação,
+    validação e visualização} de Documentos de Instância são as mais frequentes
+  entres os sistemas. Um documento de instância é uma coleção de fatos que
+  juntos formam um relatório financeiro. Tecnicamente, um documento de
+  instância é um documento XML com um elemento raiz \textit{xbrli:xbrl}
+  \cite{xbrl_conceitos_aplicacoes}. Na prática um documento de instância é
+  fonte de dados para a geração de relatórios em XBRL. Outro fato interessante
+  demonstrado na Figura \ref{fig:funcionalidades} é que as cinco
+  funcionalidades com maior frequência correspondem a mais de 50\% das
+  funcionalidades existente nas ferramentas. Este dados pode servir como base
+  para o desenvolvimento de um novo sistema de suporte à XBRL tomando estas
+  funcionalidades como base.
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{../img/graph_funcionalidades.eps}
+\caption{Frequência das funcionalidades das ferramentas}
+\label{fig:funcionalidades}
+\end{figure}
+
+A terceira questão de pesuqisa \textit{$Q3$: Existem casos reais de utilização da ferramenta
+    (Estudos de Casos, Whitepapers e etc)?} tem como objetivo levantar as
+  avaliações práticas das ferramentas propostas. Apesar de grande parte dos
+  documentos recuperados se tratarem de \textit{whitepapers} não foi possível
+  verificar em nenhum deles a avaliação prática das ferramentas. Há menções de
+  clientes  que utilizam a ferramenta e de nichos de mercado no qual o sistema
+  está inserido (\textit{$Q4$}. Todavia, não há elementos que possibilitem
+  responder \textit{$Q3$}.
+
+A ultima questão proposta neste estudo \textit{$Q4$: Qual setor da economia
+  (governos, medicina, setor financeiro) a ferramenta possui histórico de
+  utilização?} tem por objetivo verificar a expertise nas ferramentas em
+determinados ramos da economia. No caso de alguma organização tomar a decisão
+de adquirir um produto ele poderia estar interessada se empresa fornecedora
+possui conhecimento das especificidades do setor em que ela está inserida. Do
+total de 29 trabalhos que compõe esta Revisão Sistemática apenas em 13 foi
+possível definir esta informação. A Figura \ref{fig:setores} exibe os setores
+de atuação das ferramentas de modo geral. Conforme esperado bancos e mercado
+financeiro são os setores onde as ferramentas mais tem atuado. Um dado que não
+era esperado a baixa atuação do setor público (Governo) onde a implantação da
+XBRL obedece à fatores legais.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.95\textwidth]{../img/graph_setores.eps}
+\caption{Setores de Atuação das Ferramentas}
+\label{fig:setores}
+\end{figure}
+
+\section{Ameaças à Validade}
+\label{sec:ameacas}
+Nesta seção discute-se as ameaças aos resultados apresentados neste estudo. Uma
+primeira ameaça está relacionada ao fato de ter havido uma validação aos pares
+para aceitação dos estudos. O fato de não haver um outro pesquisador para
+ponderar quando surgia dúvidas quanto à aceitação de um trabalho pode levar a
+algum víes nos resultados do trabalho.
+
+Um segundo fator de ameaça está no fato de que alguns artigos não foram obtidos em sua versão completa porque exigiam a
+sua aquisição. Desta forma, nem todo os universo de artigos foi efetivamente
+avaliado. Não obstante, o número de estudos nesta situação foi pequeno (03
+artigos) sendo portanto uma ameaça de baixo impacto nos resultados.
+
+A última ameaça a validade deste trabalho está relacionado ao tipo de trabalhos
+utilizados. A grande parte dos estudos utilizados é do tipo whitepapers que são
+classificados como \textit{gray literature}. A utilização deste tipo de
+referência têm impacto na qualidade dos resultados. Contudo, devido à
+característica deste trabalho este tipo de referência não poderia ser
+ignorado.
+
+\section{Conclusão}
 \label{sec:conclusao}
+
+Neste trabalho foi realizada uma Revisão Sistemática da Literatura (SLR) seguindo as
+diretrizes propostas por \cite{keele2007guidelines} com o objetivo de analisar
+as ferramentas que possuem suporte à XBRL. A SLR iniciou com 407 trabalhos e
+após a aplicação de critérios de inclusão/exclusão chegou a um total de 29
+estudos. A partir destes 29 estudos foi possível responder três das quatros
+questões de pesquisa propostas. Os resultados demostram que exitem um número
+significado de ferramentas que dão suporte à linguagem XBRL cujas
+funcionalidades cobrem os principais requisitos para geração de relatórios em
+XBRL, como a criação de objetos de instância por exemplo. Verificou-se ainda
+que as ferramentas encontradas têm atuação especialmente nos setores
+financeiros e bancários. Existe uma grande possibilidade de crescimento no
+setor público.
+
 
 \bibliographystyle{sbc}
 \bibliography{../bib/slr_xbrl_tools}

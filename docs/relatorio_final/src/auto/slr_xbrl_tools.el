@@ -5,10 +5,10 @@
                      '(("article" "12pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("babel" "brazil") ("inputenc" "utf8") ("xcolor" "table" "xcdraw")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -39,7 +39,10 @@
     "tab:campos-form"
     "subsec:sintetizacao"
     "subsec:resultados"
-    "sec:limitacoes"
+    "tab:ferramentas"
+    "fig:funcionalidades"
+    "fig:setores"
+    "sec:ameacas"
     "sec:conclusao")
    (LaTeX-add-bibliographies
     "../bib/slr_xbrl_tools")))

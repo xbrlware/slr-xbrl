@@ -1,0 +1,784 @@
+% $Header$
+
+\documentclass[t,14pt,mathserif]{beamer}
+
+% This file is a solution template for:
+
+% - Talk at a conference/colloquium.
+% - Talk length is about 20min.
+% - Style is ornate.
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\input{style.tex}
+
+%\usepackage[brazil]{babel}
+\usepackage[english]{babel}
+
+\usepackage{graphicx}	%Package para figuras
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{array}
+%\usepackage[cmex10]{amsmath}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\newcommand{\semitransp}[2][35]{\color{fg!#1}#2}
+
+\title[] % (optional, use only with long paper titles)
+{On the Effectiveness of Concern Metrics to Detect Code\\
+Smells: An Empirical Study}
+
+\subtitle
+{Presented by Vagner Clementino}
+
+%\author[] % (optional, use only with lots of authors)
+%{Vagner Clementino~\inst{1}} %\and S.~Another\inst{2}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (optional, but mostly needed)
+{
+%  \inst{1}%
+  Department of Computer Science\\
+  Federal University of Minas Gerais (UFMG)\\
+  Software Quality and Measurement - 2015\\
+  %\and
+  %\inst{2}%
+  %Department of Theoretical Philosophy\\
+  %University of Elsewhere
+  }
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[2015/04/29] %o(optional, should be abbreviation of conference name)
+%{Software Quality and Measurement 2015-1 \\Prof. Eduardo Figueiredo}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Software Engineer}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+
+% Structuring a talk is a difficult task and the following structure
+% may not be suitable. Here are some rules that apply for this
+% solution: 
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+% - A conference audience is likely to know very little of what you
+%   are going to talk about. So *simplify*!
+% - In a 20min talk, getting the main ideas across is hard
+%   enough. Leave out details, even if it means being less precise than
+%   you think necessary.
+% - If you omit details that are vital to the proof/implementation,
+%   just say so once. Everybody will be happy with that.
+\section{About the Paper}
+
+\begin{frame}{About the Paper}
+	\begin{itemize}
+		\item Who:
+			\begin{itemize}
+				
+				\item Juliana Padilha, Juliana Pereira, Eduardo Figueiredo, Jussara Almeida\footnote{UFMG}
+				\item Alessandro Garcia, Cláudio Sant’Anna\footnote{PUC-RIO}
+			
+			\end{itemize}				
+		\item When: 2014
+		
+			
+	    \item Where:
+	      
+	       \begin{itemize}
+		     
+		     \item $26^{th}$ International Conference, CAiSE 2014, Thessaloniki, Greece, June 16-20, 2014, Proceedings. 
+			        
+	       \end{itemize}
+		
+	
+	\end{itemize}
+
+
+\end{frame}
+
+
+\section{Context}
+
+\begin{frame}{Software Maintainability Measurement}
+  % - A title should summarize the slide in an understandable fashion
+  %   for anyone how does not follow everything on the slide itself.
+
+  \begin{itemize}
+  \item \alert{Software Measurement} has been proposed to find symptoms of particular design flaw.
+  \item \alert{Software Metrics} are the key means for assessing the system maintainability\cite{Chidamber:1994:MSO:630808.631131}{}.
+  \item Traditionally software metrics have been used to evaluate the maintainability of software programs through the identification of code smells{}.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Traditional vs concern Metrics}
+
+	\begin{itemize}
+		\item Traditional metrics quantify properties of software modules.
+        \item Concern metrics quantify concern properties, such as \textit{scattering} and \textit{tangling}.
+        \item Some \textit{code smells}  may be motivated by a poor separation of \alert{Concerns}.
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Concerns' Definition}
+	\begin{itemize}
+		\item A \alert{Concern} is any important property or area of interest of a system that \underline{we want} to treat in a modular way\cite{Robillard:2007:RCS:1189748.1189751}.
+		
+		\item Examples:
+			 \begin{itemize}
+			 
+				\item Functional concerns.
+				\item Quality of service.
+				\item Organizational concerns.
+				\item Global system concerns.
+							 
+			 \end{itemize}
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{A Less Formal Definition}
+
+ \begin{itemize}
+ 	\item A concern can be defined as something that is of interest or significance to a stakeholder or a group of stakeholders\cite{sommerville2011software}.
+ \end{itemize}
+
+	
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{../img/concern_concept.eps}
+\caption{Stakeholder with yours concerns}
+\label{fig_concern_stackholder}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{Crosscutting Concerns}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=2.5in]{../img/cross_cutting_concerns.eps}
+\label{fig_Crosscutting_Concerns}
+\caption{Adapted from \cite{sommerville2011software}.}
+\end{figure}
+
+\begin{itemize}
+	\item Two typical problems:
+		\begin{itemize}
+			\item \textit{Scattering}
+			\item \textit{Tangling}
+		\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Scattering}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{../img/scattering_concern_.eps}
+\caption{Logging concern in Tomcat.}
+
+\label{fig_Scattering_Concerns}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Tangling}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{../img/tanggling.eps}
+\caption{Tangling of buffer management and synchronization code. Adapted from \cite{sommerville2011software}.}
+\label{fig_tanggling_Concerns}
+\end{figure}
+
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}{Motivation}
+	\begin{itemize}
+		\item Concern metrics have been used in several empirical studies:
+		 	\begin{itemize}
+		 		\item Comparing aspect-oriented and object-oriented programming techniques
+		 		\item Identifying crosscutting concerns that should be refactored
+			\end{itemize}
+		\item However, there is a lack of studies about the \textit{effectiveness of concern metrics to support code smell detection}.
+	\end{itemize}
+
+
+\end{frame}
+
+\section{Proposed Work}
+
+\begin{frame}{Proposed Work}
+	\begin{itemize}
+		\item It has been proposed an \alert{empirical investigation} of the \alert{effectiveness} of
+\alert{concern metrics} compared with \alert{traditional metrics} on the identification of \alert{code smells}.
+		\item That study compares the trade-offs on the \textit{recall} and \textit{time efficiency} of code smell detection.
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Traditional Metrics}
+	
+ \begin{itemize}
+ 
+	\item It was selected a set of the most widely used metrics to be a baseline.
+	\item \textit{Chidamber-Kemerer (CK) Suite}\cite{Chidamber:1994:MSO:630808.631131}{}.
+	\item These metrics has been largely used in literature.\cite{Ferrari:2010:ESF:1806799.1806813,Figueiredo:2008:ESP:1368088.1368124,1357820}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Traditional Metrics}
+\begin{table}[!t]
+\renewcommand{\arraystretch}{1.3}
+\label{tab:projetos}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}{|c|c|}
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Metric} & \textbf{Definition}\\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Coupling between Objects (CBO)} & Number of classes from which a class calls methods or accesses attributes. \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Lack of Cohesion in Methods (LCOM)} & It divides pairs of methods that do not access common attributes by pairs that access common attributes. \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Lines of Code (LOC)} & Total number of lines of code.\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Number of Attributes (NOA)} & Number of attributes defined in a class.\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Number of Methods (NOM) }& Number of methods defined in a class.\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Weighted Methods per Class (WMC)} & Number of methods and their parameters in a class \\ 
+\hline 
+\end{tabular} 
+}	
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Concern Metrics}
+	
+ \begin{itemize}
+ 
+	\item Concern Metrics goals are the identification of specific design flaws or design degeneration caused by poor modularization of concerns.
+	\item These metrics have been successfully used in a number of studies related to software maintainability\cite{Figueiredo:2008:ESP:1368088.1368124, Garcia:2005:MDP:1052898.1052899,73588}.
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Concern Metrics}
+\begin{table}[!t]
+
+\renewcommand{\arraystretch}{1.3}
+\label{tab:projetos}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}{|c|c|}
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Metric} & \textbf{Definition}\\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Concern Diffusion over Components (CDC)} & Number of classes whose main purpose is to contribute to the implementation of a concern and the number of other classes that access them.\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Concern Diffusion over Operations (CDO)} & Number of methods whose main function is to implement a concern.\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Concern Diffusion over LOC (CDLOC)} & Number of transition points for each concern through the lines of code. Transition points are points in the code where there is a ``concern switch”.\\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} \textbf{Number Concerns per Component (NCC)} & Number of concern in each class.\\ 
+\hline 
+\end{tabular} 
+}	
+\end{table}
+\end{frame}
+
+\begin{frame}{Code Smells}
+
+	\begin{itemize}
+		\item \textbf{Divergent Change:} A class is often changed in different ways for different reasons.
+	    \item \textbf{Shotgun Surgery:} This code smell is somehow the opposite of Divergent Change. Making a kind of change in a class leads to a lot of small changes in many different classes.
+		\item \textbf{God Class:} An object that knows too much or does too much.
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Study Settings}
+
+	\begin{itemize}
+		\item Target System
+			\begin{itemize}
+				\item \textbf{Health Watcher:} Web-based information system that supports the registration and
+management of complaints to the public health system.
+				\item \textbf{MobileMedia:} It is a \textit{software product line} (SPL) for applications that manipulate photo, music and video on mobile devices, such as mobile phones.
+				\item They have been previously used in other maintainability-related studies.
+				\item The authors have access to developers and experts.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+	
+\begin{frame}{Study Settings}
+
+	\begin{itemize}
+		\item Code Smells Reference List
+			\begin{itemize}
+				\item Software's experts make a list of detected code smells from each system.
+				\item It was promoted a discussions among experts in order to achieve a consensus.
+			\end{itemize}
+	\end{itemize}
+	
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=3.5in]{../img/code_smells_ref_list.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Study Settings}
+
+	\begin{itemize}
+		\item Background of Subjects
+			\begin{itemize}
+				\item 54 subjects, named $S_1$ to $S_{54}$
+				\item Federal University of Minas Gerais (UFMG)
+						\begin{itemize}
+							\item 11 IT professional.
+							\item 4 PhD candidates.
+							\item 12 undergraduate students.
+						\end{itemize}
+						
+				\item Lancaster University (UK)
+					\begin{itemize}
+						\item 14 PhD candidate.
+						\item 13 undergraduate student.						
+					\end{itemize}
+				
+			\end{itemize}
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Study Settings}
+
+	\begin{itemize}
+		\item Background of Subjects
+			\begin{itemize}
+				\item Before running the experiment the subjects answered a background questionnaire.
+			\end{itemize}
+	\end{itemize}
+	
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=3.5in]{../img/sujects_backgrounds.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}{Study Settings}
+
+	\begin{itemize}
+		\item Subjects' Skills:
+			\begin{itemize}
+				\item \textit{60\%} have \textit{moderate to high} knowledge in \textit{Class Diagram} and \textit{Java Programming}.
+				\item \textit{71\%} have \textit{moderate to high knowledge} in at least one topic.
+				\item \textit{31\%} have \textit{low to none} knowledge in all topics.
+			\end{itemize}			 
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Study Settings}
+
+	\begin{itemize}
+		\item Experimental Tasks:
+			\begin{itemize}
+				\item The study was preceded by a 30-minute training session to allow subjects' familiarization with the evaluated metrics and the target code smells.
+				\item The subjects receive a document with a brief explanation and a partial view of
+the system design as a Class Diagram, and a description of the concerns involved in the respective analyzed system.
+			\end{itemize}			 
+	\end{itemize}
+
+\end{frame}
+
+\section{Results}
+
+\begin{frame}{Evaluation Metrics}
+
+\begin{itemize}
+	\item It was defined three metrics based on the reference lists:
+		\begin{itemize}
+			\item \textit{True Positive (TP):} number of \textit{correctly} identified code smells by a subject.
+			\item \textit{False Positive (FP):} number of \textit{wrongly} identified code smells by a subject.
+			\item \textit{False Negative (FN):} number of code smells a subject\textit{ missed out}.					        \end{itemize}
+
+\end{itemize}
+
+
+
+\end{frame}
+
+\begin{frame}{Recall and Precision}
+
+\begin{itemize}
+	\item $Recall(R) = \frac{TP}{TP+FN}$
+	\item $Precision(P) = \frac{TP}{TP+FP}$
+	\item The focus was mainly on \textit{recall} because it is a measure of completeness.
+	\item High \textit{recall} means that the subject was able to identify most code smells in the system.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Results Divergent Change}
+
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/results_divergent_change.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Results Divergent Change}
+
+	\begin{itemize}
+	
+		\item Concern and hybrid groups achieved better results than traditional group.
+		\item The average recall of the concern group was 62\%.
+		\item The best achievement from the traditional metric was 33\%.
+		\item \textit{Concern metrics} are an effective means to detect Divergent Change.
+		
+	
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}{Results Shotgun Surgery}
+
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/results_shotgun_sugery.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Results Shotgun Surgery}
+
+	\begin{itemize}
+	
+		\item No group achieved good results.
+		\item The used metrics cannot properly indicate Shotgun Surgery.
+		\item The spent time (on average) was less than in others code smells detection.
+	
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Results God Class}
+
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/results_god_class.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Results God Class}
+
+\begin{itemize}
+
+	\item Traditional metrics when used in isolation do not so good to detect God Class.
+	\item The join of concern and traditional metrics (hybrids) seems to be the best choice.
+	
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item \textbf{RQ1.} \textit{How accurate do concern metrics perform in comparison with traditional
+metrics to detect code smells?}
+
+		\begin{itemize}
+			\item It was performed an \textit{unpaired t-test} with 90\% confidence level\cite{jain1991art}{}.
+			\item The \textit{unpaired t-test} can be used to determine if two sets of data are significantly{}. different
+		\end{itemize}
+
+	
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item For concerns metrics two confidence intervals computed \textit{do} overlap.
+		\item This mean that statistically the results for both systems \textit{are not} different.
+		\item In another way the concern metrics are system-independent.
+	\end{itemize}
+
+
+
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/q1.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item Concern metrics produce significantly higher recall, compared to traditional metrics for
+the Health Watcher system.
+		\item For the MobileMedia system there was a statistical tie, but results are better for the concern metric.
+		
+	\end{itemize}
+
+	
+\end{frame}
+
+\begin{frame}{Results: Research Questions}
+
+\begin{itemize}
+	\item \textbf{RQ2.} \textit{Does background of subjects impact the efficiency of the detected code smell?}
+	
+		\begin{itemize}
+	
+			\item It was applied a $2^{k}$ full factorial design with $k=2${}.\cite{jain1991art}
+			\item Developers' work experience \emph{vs} the time spent in code smells detection.
+			\item Low Experience: $\leq$ \textit{6 months} High Experience: $>$ \textit{6 months}{}.
+			\item Short Time: $\leq$ \textit{33 minutes} Long Time: $>$ \textit{33 minutes}{}.
+		\end{itemize}
+	
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Results: Research Questions}
+
+\begin{itemize}
+	\item \textbf{RQ2.} \textit{Does background of subjects impact the efficiency of the detected code smell?}
+	
+		\begin{itemize}
+			\item Results shows that the recall tends to increase with the work experience and the time spent in the detection.
+			\item \emph{96\%} can be attributed to the time spent in the detection.
+			\item \emph{04\%} is due to variations in the subject’s work experience.
+			\item  \emph{01\%} for the interaction of these two factors.
+			
+		\end{itemize}
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item \textbf{RQ3.} \textit{Is there a combination of metrics that increases recall of code smell detection?}
+		
+		\begin{itemize}
+			\item Subjects reported the metrics they considered useful for each code smell.
+			\item The result was based in the metrics that were considered useful by at least three subject.
+			\item It was analyzed to metrics with average of recall higher than 30\%.
+		\end{itemize}
+	
+		
+
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item Divergent Change
+		
+		\begin{itemize}
+			\item Number Concern per Component (NCC)
+			\item Lack of Cohesion in Methods (LCOM)
+			\item Concern Diffusion over Components (CDC)
+			\item Line of Code (LOC)
+		\end{itemize}
+	
+	\end{itemize}
+	
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/q3_1.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+	
+\end{frame}
+
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item Shotgun Surgery 
+		
+		\begin{itemize}
+			\item Coupling between Object (CBO)
+			\item Concern Diffusion over Components (CDC)
+			\item Number Concern per Component (NCC)
+		\end{itemize}
+	
+		
+
+	
+	\end{itemize}
+	
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/q3_2.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+	
+\end{frame}
+
+
+\begin{frame}{Results: Research Questions}
+
+	\begin{itemize}
+		\item God Class
+		
+		
+		\begin{itemize}
+			\item Coupling between Object (CBO)
+			\item Lack of Cohesion in Methods (LCOM)
+			\item Weighted Methods per Class (WMC)
+			\item Concern Diffusions over LOC (CDLOC)
+		\end{itemize}	
+	\end{itemize}
+	
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[width=4.5in]{../img/q3_3.eps}
+		\label{fig_code_smell_list}
+	\end{figure}
+	
+\end{frame}
+
+\section{Threats to Validity}
+\begin{frame}{Threats to Validity}
+	\begin{itemize}
+		\item The conclusions are restricted to the involved metrics, code smells, and target software systems.
+		\item Language-specific.
+		\item \textit{Quasi}-Experiment.
+	\end{itemize}
+
+\end{frame}
+
+
+\section{Conclusions}
+\begin{frame}{Conclusions}
+	\begin{itemize}
+		\item The time spent in code smell detection is more relevant than the developer’s expertise.
+		\item Concern metrics are clearly useful to detect Divergent Change and God Class.
+		\item The concern metric \textit{Number of Concerns per Component} is a reliable indicator of \textit{Divergent Change}.
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Questions?}
+
+	\begin{figure}[hbtp]
+		\centering
+	\includegraphics[scale=1]{../img/questions.jpg}
+	\end{figure}
+	
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+   \frametitle{References}
+   \bibliographystyle{IEEEtranS}
+   \bibliography{IEEEfull,bibliografia}
+\end{frame}
+
+\end{document}
