@@ -30,6 +30,9 @@
     "array")
    (TeX-add-symbols
     '("semitransp" ["argument"] 1))
+   (LaTeX-add-labels
+    "tab:base-dados"
+    "tab:dicionario")
    (LaTeX-add-bibliographies
     "IEEEfull"
     "bibliografia")))
