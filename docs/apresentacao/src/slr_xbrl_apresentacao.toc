@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Background}{5}{0}{2}
+\beamer@sectionintoc {3}{Justificativa}{9}{0}{3}
+\beamer@sectionintoc {4}{Objetivo}{10}{0}{4}
+\beamer@sectionintoc {5}{Metodologia}{11}{0}{5}
