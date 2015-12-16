@@ -32,7 +32,11 @@
     '("semitransp" ["argument"] 1))
    (LaTeX-add-labels
     "tab:base-dados"
-    "tab:dicionario")
+    "tab:dicionario"
+    "tab:campos-form"
+    "tab:ferramentas"
+    "fig:funcionalidades"
+    "fig:setores")
    (LaTeX-add-bibliographies
     "IEEEfull"
     "bibliografia")))

@@ -145,26 +145,96 @@ Revisão Sistemática da Literatura}
 % - If you omit details that are vital to the proof/implementation,
 %   just say so once. Everybody will be happy with that.
 \section{Introdução}
+\begin{frame}{Introdução}
+    \begin{itemize}
+      \item Organizações estão ser tornando cada vez mais transparentes com
+        relação às suas operações
+      \item Informações são disponibilizadas aos stakeholders através de
+        Relatórios de Negócio (Business Report)
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Introdução}
+    \begin{itemize}
+      \item No Brasil, o processo de transparência dos entes públicos ainda têm
+        o que melhorar
+       \item Escala Brasil Transparente\footnote{Disponível em \url{http://www.cgu.gov.br/assuntos/transparencia-publica/escala-brasil-transparente}}
+    \end{itemize}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.357\textwidth]{../img/ebt.eps}
+\end{figure}
+\end{frame}
+
 \section{Background}
 \begin{frame}{eXtensible Business Report Language - XBRL}
 
     \begin{itemize}
       \item \alert{XBRL} é uma linguagem para divulgação e intercâmbio de
-        informações financeiras baseada em XML \cite{xbrl_conceitos_aplicacoes}.
+        informações financeiras baseada em XML, conforme Silva et. al.\cite{xbrl_conceitos_aplicacoes}.
+      \item Baseada nos conceitos de \alert{Taxonomia} e \alert{Documentos de Instância}
     \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Taxonomia em XBRL}
+    \begin{figure}[htb]
+\centering
+\includegraphics[width=.357\textwidth]{../img/taxonomia.eps}
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}{Exemplo de Documento XBRL}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{../img/arquivo_xsd.eps}
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Relatórios  de Negócio (Business Report)}
+    \begin{itemize}
+      \item Segundo Lymer et al.\cite{lymer1999business} é o produto final da divulgação
+        pública de dados operacionais e financeiros de uma organização
+      \item Prestação regular de informações para os gestores para tomada de decisão.
+      \item Exemplos
+      \begin{itemize}
+           \item Capital Requirements Directives (CRD)
+           \item Matriz de Saldos Contábeis
+           \item Gastos com pessoal do governo federal
+      \end{itemize}
 
-
+    \end{itemize}
 \end{frame}
 
 \section{Justificativa}
+\begin{frame}{Justificativa}
+    \begin{itemize}
+      \item Secretaria do Tesouro Nacional definiu o XBRL como padrão para o
+        envio de relatórios de prestação de contas.
+      \item Demanda por parte das organizações de referências de qualidade
+        sobre o assunto de \textit{XBRL}.
+      \item \textit{Subsidiar a tomada de decisão} sobre a aquisição ou
+        desenvolvimento de ferramentas de suporte à XBRL.
+  \end{itemize}
+\end{frame}
+
 \section{Objetivo}
+\begin{frame}{Objetivo do Trabalho}
+    \begin{itemize}
+      \item Revisar a bibliografia de Engenharia de Software a fim de descobrir
+        ferramentas para Relatórios de Negócio com suporte à XBRL, suas
+        funcionalidades e área de atuação.
+  \end{itemize}
+\end{frame}
+
 \section{Metodologia}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Protocolo da Revisão}
     \begin{itemize}
-      \item Definição de um Protocolo com diretrizes para SLR
-        \cite{kitchenham2009systematic}
+      \item Definição de um Protocolo com diretrizes para SLR, conforme
+        Kitchenham et. al. \cite{kitchenham2009systematic}
       \item Foram propostas Questões de Pesquisa a serem respondidas pela SLR
   \end{itemize}
 \end{frame}
@@ -255,7 +325,7 @@ Revisão Sistemática da Literatura}
 \begin{itemize}
     \item ``XBRL \textbf{AND} Business Report \textbf{AND} tool''
     \item Utilização de Tabela de Sinônimos
-    \item
+    \item Um total de 407 trabalhos ao final do processo
 
 \end{itemize}
 \begin{table}[ht]
@@ -280,7 +350,11 @@ Business Report & Finantial Report OR Data Extraction \\ \hline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Decisão de Inclusão e Exclusão}
     \begin{itemize}
-      \item
+      \item Remoção de artigos duplicados através da ferramenta
+        \textit{JabRef}\footnote{\url{http://jabref.sourceforge.net/}}.
+      \item Remoção de livros
+      \item Análise do título removeu de 202 artigos
+      \item Análise do resumo resultou em 59 trabalhos
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -288,34 +362,234 @@ Business Report & Finantial Report OR Data Extraction \\ \hline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Análise da Qualidade dos Estudos}
     \begin{itemize}
-      \item
+      \item Critérios de avaliação da qualidade:
+           \begin{itemize}
+                \item Existe uma clara definição do estudo?
+                \item Existe avaliação da ferramenta proposta bem como discussão dos resultados?
+                \item O estudo é capaz de responder de forma clara pelo menos
+                  50\% das questões de pesquisa?
+           \end{itemize}
+       \item Estudo era incluído se a resposta fosse ``SIM'' para pelo menos duas
+         destas questões.
+       \item Através deste processo 30 trabalhos foram o excluídos e 29 estudos
+         permaneceram
+
     \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Resumo do Processo de Seleção}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{../img/graph_fases.eps}
+\caption{Total de artigos em cada fase da SLR}%\label{fig:fases}
+\end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Extração dos Dados}
-    \begin{itemize}
-      \item
+    \begin{itemize}      \item Extração dos dados com base nos campos exibidos na Tabela
+        \ref{tab:campos-form}.
+      \item Validação única (sem pair-review)
     \end{itemize}
+
+\begin{table}[ht]
+\resizebox{9.5cm}{!}{%
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{\#} & \multicolumn{1}{c|}{\textbf{Atributo}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                      \\ \hline
+01          & Identificador do Estudo                & ID único para cada estudo, por exemplo IE01                                                  \\ \hline
+02          & Data de Extração                       & Data no qual a extração foi conduzida (DD/MM/YYYY)                                           \\ \hline
+03          & Nome do Extrator                       & Nome da pessoa responsável pela extração                                                     \\ \hline
+04          & Autor                                  & Autor do estudo                                                                              \\ \hline
+05          & Ano                                    & Ano de publicação do estudo                                                                  \\ \hline
+06          & Título                                 & Título do Estudo                                                                             \\ \hline
+07          & Tipo de Publicação                     & Artigo de journal ou conferência, dissertação, tese ou whitepaper                            \\ \hline
+08          & Objetivo do Estudo                     & Quais foram os objetivos do estudo?                                                          \\ \hline
+09          & Metodologia do Estudo                  & Quais foram as metodologias utilizadas no estudo?                                            \\ \hline
+10          & Descobertas e Resultados               & Quais foram os resultados e descobertas do estudo                                            \\ \hline
+11          & Nome da Ferramenta                     & Nome da ferramenta                                                                           \\ \hline
+12          & Desenvolvedor                          & Pessoa ou empresa responsável pelo desenvolvimento                                           \\ \hline
+13          & URL                                    & Site da internet da ferramenta                                                               \\ \hline
+14          & Objetivo da Ferramenta                 & Qual funcionalidade principal da ferramenta                                                  \\ \hline
+15          & Tipo de Arquitetura da Ferramenta      & Cliente/Servidor ou Web ou desktop                                                           \\ \hline
+16          & Tipo de Licença da Ferramenta          & Software livre ou proprietário                                                               \\ \hline
+17          & Avaliação da Ferramenta                & Como a ferramenta foi avaliada                                                               \\ \hline
+18          & Estudo de Casos                        & Existe algum estudo de caso ou aplicação real da ferramenta                                  \\ \hline
+19          & Ramo de Atuação                          & Qual setor da economia (governos, medicina, setor financeiro) a ferramenta já foi utilizada? \\ \hline
+\end{tabular}
+}
+\caption{Campos do formulário de extração de dados}
+\label{tab:campos-form}
+\end{table}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Sintetização dos Dados}
     \begin{itemize}
-      \item
+       \item Neste trabalho o foco é na classificação e sumarização das
+informações com o objetivo de responder as questões de pesquisa.
+       \item Utilizado técnicas de \textit{Estatística Descritiva} conforme
+         descrito por Wohlin et. al\cite{wohlin2012experimentation}
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{}
+\begin{frame}{Resultados}
+
     \begin{itemize}
-      \item
+      \item $Q1$: Quais são as ferramentas para
+  Relatórios de Negócio que suportam a XBRL?
+    \end{itemize}
+\begin{table}[htb]
+\resizebox{7.5cm}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Nome da Ferramenta}} & \multicolumn{1}{c|}{\textbf{Desenvolvedor}} & \multicolumn{1}{c|}{\textbf{Arquitetura}} & \multicolumn{1}{c|}{\textbf{Licença}} \\ \hline
+Abax XBRL                                         & 2H Software                                 & Framework                                 & Paga                                  \\ \hline
+ADDACTIS Pillar3                                  & ADDACTIS                                    & Cliente/Servidor                          & Pago                                  \\ \hline
+AGUILONIUS FactsConverter                         & Aguilonius                                  & Plugin Excel                              & Pago                                  \\ \hline
+AGUILONIUS XBRL FACTORY SE                        & Aguilonius                                  & Cliente/Servidor                          & Paga                                  \\ \hline
+AMANA SmartNotes                                  & AMANA SmartNotes                            & Desktop                                   & Paga                                  \\ \hline
+Arele                                             & XBRL community                              & Framework                                 & Código Aberto                         \\ \hline
+Batavia XBRL                                      & Batavia XBRL BV                             & Framework                                 & Paga.                                 \\ \hline
+Calcbench                                         & Calcbench                                   & Web application                           & Paga                                  \\ \hline
+DataTracks                                        & DataTracks                                  & Cliente/Servidor                          & Paga                                  \\ \hline
+FinDynamics                                       & FinDynamics                                 & Excel Plugin                              & Paga                                  \\ \hline
+FUJITSU Software Interstage XWand                 & Fujitsu                                     & Framework                                 & Paga                                  \\ \hline
+Invoke e-Filing for Banks                         & Invoke                                      & Web Application                           & Paga                                  \\ \hline
+IRIS Carbon                                       & IRIS Business Services Limited              & Cloud                                     & Paga                                  \\ \hline
+Litix                                             & BR-AG                                       & Mobile                                    & Paga                                  \\ \hline
+Oracle Hyperion Disclosure Management             & ORACLE                                      & Cliente/Servidor                          & Paga                                  \\ \hline
+ParsePort XBRL Converter                          & ParsePort                                   & Web application                           & Paga                                  \\ \hline
+ParsePort                                         & AltaNova                                    & Cliente/Servidor                          & Paga                                  \\ \hline
+RegulatorWorks                                    & XBRLWorks                                   & Cliente/Servidor                          & Paga                                  \\ \hline
+Reporting Standard XBRL                           & Reporting Standard                          & Desktop                                   & Paga                                  \\ \hline
+Seahorse                                          & CoreFiling                                  & Cliente/Servidor                          & Paga                                  \\ \hline
+Wdesk                                             & Workiva                                     & Web Application                           & Paga                                  \\ \hline
+XBRL Processing Engine (XPE)                      & UBPartner                                   & Framework                                 & Paga                                  \\ \hline
+xbrlOne Data Editor                               & Semansys Technologies                       & Desktop                                   & Paga                                  \\ \hline
+XKUBED                                            & IPHIX                                       & Cliente/Servidor                          & Paga                                  \\ \hline
+Yeti                                              & CoreFiling                                  & Web application                           & Paga                                  \\ \hline
+XBRL Database Cluster                             & Argyris Argyrou , Andriy Andreev            & Cliente/Servidor                          & N/A                                   \\ \hline
+XBRL Audit Assistant                              & Efrim Boritz \& Won Gyun No                 & Desktop                                   & N/A                                   \\ \hline
+\end{tabular}
+}
+\caption{Ferramentas com Suporte à XBRL}
+\label{tab:ferramentas}
+\end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{$Q2$: Resultados}
+    \begin{itemize}
+      \item {$Q2$: Quais são as funcionalidades comuns as ferramentas
+    que possibilitem a comparação entre elas?}
+    \end{itemize}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.85\textwidth]{../img/graph_funcionalidades.eps}
+\caption{Frequência das funcionalidades das ferramentas}
+\label{fig:funcionalidades}
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Resultados}
+    \begin{itemize}
+         \item $Q3$: Existem casos reais de utilização da ferramenta
+    (Estudos de Casos, Whitepapers e etc)?
+         \begin{itemize}
+               \item Não foi possível verificar nos estudos a avaliação prática das
+        ferramentas.
+              \item Há menções de clientes e de nichos de mercado no qual o sistema
+        está inserido
+              \item Não foi possível responder $Q3$
+       \end{itemize}
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Resultados}
+    \begin{itemize}
+      \item $Q4$: Qual setor da economia
+  (governos, medicina, setor financeiro) a ferramenta possui histórico de
+  utilização?
+    \end{itemize}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\textwidth]{../img/graph_setores.eps}
+\caption{Setores de Atuação das Ferramentas}
+\label{fig:setores}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Ameaças à Validade}
+    \begin{itemize}
+      \item Construção
+        \begin{itemize}
+        \item Definição das Questões de Pesquisa
+        \end{itemize}
+      \item Interna
+        \begin{itemize}
+        \item Inexistência de Pair Review
+        \item Processo de Seleção
+        \end{itemize}
+      \item Externa
+      \begin{itemize}
+        \item Utilização de Gray Literature
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Conclusão}
+    \begin{itemize}
+\item Revisão Sistemática da Literatura conforme prposto por Keele et al. \cite{keele2007guidelines}
+\item SLR iniciou com 407 trabalhos que aós processo de seleção resultou em 29 estudos.
+\item A partir destes estudos foi possível responder três das quatros questões de pesquisa propostas.
+
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Conclusão}
+    \begin{itemize}
+\item A maioria das ferramentas que dão suporte para funcionalidades mais
+  básicas (criação, visualização e validação de objetos  de instância)
+\item Predonimância nos setores financeiros e bancários
+\item Possibilidade de Crescimento no setor público.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Lições Aprendidas}
+    \begin{itemize}
+      \item Estudo piloto pode ajudar na definição das questões de pesquisa
+      \item Processo de seleção de estudo primários pode ser melhorado
+      \item Oportunidade para o desenvolvimento de ferramentas de suporte as SLR's
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Dúvidas}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.5\textwidth]{../img/questions.jpg}
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[allowframebreaks]
    \frametitle{Referências}
